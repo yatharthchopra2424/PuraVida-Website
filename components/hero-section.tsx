@@ -50,15 +50,18 @@ const HeroSection: React.FC = () => {
             }}
           >
             <div className="container mx-auto px-4 h-full flex items-center">
-              <div className="text-white max-w-2xl">
+              <div className="text-white max-w-2xl ml-8">
                 <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up">{slide.title}</h1>
                 <h2 className="text-2xl md:text-3xl mb-6 text-orange-400 animate-fade-in-up animation-delay-200">
                   {slide.subtitle}
                 </h2>
                 <p className="text-lg md:text-xl mb-8 animate-fade-in-up animation-delay-400">{slide.description}</p>
                 <div className="flex space-x-4 animate-fade-in-up animation-delay-600">
-                  <button className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors font-semibold">
-                    Explore Products
+                  <button
+                    className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors font-semibold"
+                    onClick={() => window.open("/Product List.pdf", "_blank")}
+                  >
+                    Download Product List
                   </button>
                   <button className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-green-800 transition-colors font-semibold">
                     Contact Us

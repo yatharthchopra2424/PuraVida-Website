@@ -436,8 +436,9 @@ export default function ProductRangeSection() {
           <Button
             variant="outline"
             className="hidden sm:flex items-center gap-2 text-green-600 border-green-600 hover:bg-green-50 bg-transparent"
+            onClick={() => window.open("/Product List.pdf", "_blank")}
           >
-            <span>View All Categories</span>
+            <span>Download Product List</span>
             <ChevronRight className="w-4 h-4" />
           </Button>
         </div>
@@ -448,8 +449,12 @@ export default function ProductRangeSection() {
             {/* Category heading */}
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-semibold text-gray-700">{category.title}</h3>
-              <Button variant="ghost" className="flex items-center gap-2 text-green-600 hover:text-green-700">
-                <span>View All</span>
+              <Button
+                variant="ghost"
+                className="flex items-center gap-2 text-green-600 hover:text-green-700"
+                onClick={() => window.open("/Product List.pdf", "_blank")}
+              >
+                <span>Download Product List</span>
                 <ChevronRight className="w-4 h-4" />
               </Button>
             </div>

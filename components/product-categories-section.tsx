@@ -3,189 +3,208 @@
 import type React from "react"
 
 const ProductCategoriesSection: React.FC = () => {
-  const products = [
+  const categories = [
     {
       id: 1,
-      name: "Plant Extract Powder",
-      price: "₹ 5,000",
-      unit: "/Kg",
+      name: "STANDARDIZED HERBAL",
+      description: "Premium quality standardized herbal extracts",
       image: "/plant-extract-powder.png",
-      details: [
-        { label: "Packaging Type", value: "Packet" },
-        { label: "Brand", value: "Vital Herbs" },
-        { label: "Pack Size", value: "1 kg" },
-      ],
+      badge: "GMP Certified",
+      badgeColor: "bg-green-100 text-green-800",
+      features: ["99%+ Active Compounds", "Powder Extract", "Pharmaceutical Grade"],
     },
     {
       id: 2,
-      name: "Yeast Extract Powder",
-      price: "₹ 1,200",
-      unit: "/Kg",
-      image: "/yeast-extract-powder.png",
-      details: [
-        { label: "Packaging Size", value: "1Kg" },
-        { label: "Packaging Type", value: "Packet" },
-        { label: "Brand", value: "Vital Herbs" },
-      ],
+      name: "EXTRACTS",
+      description: "Pure botanical extracts for various applications",
+      image: "/green-tea-extract-powder.png",
+      badge: "ISO Certified",
+      badgeColor: "bg-emerald-100 text-emerald-800",
+      features: ["Advanced Extraction", "Pharmaceutical Grade", "Pure & Natural"],
     },
     {
       id: 3,
-      name: "Green Tea Extract",
-      price: "₹ 250",
-      unit: "/Kilogram",
-      image: "/green-tea-extract-powder.png",
-      details: [
-        { label: "Color", value: "Green" },
-        { label: "Packaging Type", value: "Packet" },
-        { label: "Packaging Size", value: "1 Kg" },
-      ],
+      name: "ESSENTIAL OILS",
+      description: "Therapeutic grade essential oils",
+      image: "/black-pepper-essential-oil-bottle.png",
+      badge: "100% Pure",
+      badgeColor: "bg-blue-100 text-blue-800",
+      features: ["Steam Distillation", "Therapeutic Grade", "Aromatic"],
     },
     {
       id: 4,
-      name: "Stevia Leaf Extract",
-      price: "₹ 1,500",
-      unit: "/Kg",
-      image: "/stevia-leaf-extract-white-powder.png",
-      details: [
-        { label: "Packaging Type", value: "Packet" },
-        { label: "Packaging Size", value: "1 kg" },
-        { label: "Appearance", value: "White or off-White Crystalline Powder" },
-      ],
+      name: "OLEORESINS",
+      description: "Concentrated spice oleoresins",
+      image: "/black-pepper-oleoresin-bottle.png",
+      badge: "High Potency",
+      badgeColor: "bg-orange-100 text-orange-800",
+      features: ["Liquid Extract", "Food & Pharma", "Concentrated"],
     },
     {
       id: 5,
-      name: "Griffonia Seed Extract",
-      price: "₹ 9,000",
-      unit: "/Kg",
-      image: "/griffonia-seed-extract-brown-powder.png",
-      details: [
-        { label: "Brand", value: "Vital Herbs" },
-        { label: "Packaging Type", value: "Packet" },
-        { label: "Pack Size", value: "1 Kg" },
-      ],
+      name: "FRUIT JUICE POWDERS",
+      description: "Natural fruit juice concentrates",
+      image: "/orange-juice-powder.png",
+      badge: "100% Natural",
+      badgeColor: "bg-yellow-100 text-yellow-800",
+      features: ["Spray Dried", "Instant Soluble", "Natural Source"],
     },
     {
       id: 6,
-      name: "Guduchi Giloy Extract",
-      price: "₹ 250",
-      unit: "/Kilogram",
-      image: "/guduchi-giloy-extract-green-powder.png",
-      details: [
-        { label: "Brand", value: "Vital Herbs" },
-        { label: "Form", value: "Powder" },
-        { label: "Color", value: "Green" },
-      ],
+      name: "PHYTOCHEMICALS",
+      description: "Isolated plant compounds",
+      image: "/curcumin-powder-yellow.png",
+      badge: "High Purity",
+      badgeColor: "bg-purple-100 text-purple-800",
+      features: ["Isolated Compounds", "Analytical Standard", "Research Grade"],
+    },
+    {
+      id: 7,
+      name: "AMINO ACIDS",
+      description: "Essential amino acids",
+      image: "/l-arginine-powder-white.png",
+      badge: "USP Grade",
+      badgeColor: "bg-teal-100 text-teal-800",
+      features: ["Crystalline Powder", "Essential & Non-Essential", "Pure"],
+    },
+    {
+      id: 8,
+      name: "NUTRACEUTICALS",
+      description: "Health supplements",
+      image: "/coenzyme-q10-powder.png",
+      badge: "Premium Grade",
+      badgeColor: "bg-indigo-100 text-indigo-800",
+      features: ["Health & Wellness", "Premium Quality", "Supplements"],
     },
   ]
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-green-800 mb-4">Our Product Categories</h2>
-          <p className="text-gray-600 text-lg">Premium quality herbal extracts and natural supplements</p>
+    <section className="py-12 bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="container mx-auto px-4 max-w-7xl">
+        {/* Header */}
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            Premium Natural Products
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+            Our Product <span className="text-green-600">Categories</span>
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Discover our comprehensive range of premium herbal extracts and natural supplements
+          </p>
         </div>
 
-        {/* Top Featured Products */}
-        <div className="grid lg:grid-cols-4 gap-6 mb-8">
-          <div className="lg:col-span-3">
-            <div className="grid md:grid-cols-2 gap-6">
-              {products.slice(0, 2).map((product) => (
-                <div
-                  key={product.id}
-                  className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-                >
-                  <div className="h-48 bg-gray-100 flex items-center justify-center p-4">
-                    <img
-                      src={product.image || "/placeholder.svg"}
-                      alt={product.name}
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-800 mb-2 line-clamp-2">{product.name}</h3>
-                    <div className="text-2xl font-bold text-green-800 mb-4">
-                      <span className="text-orange-500">{product.price}</span>
-                      <span className="text-sm text-gray-600 font-normal">{product.unit}</span>
-                    </div>
-                    <ul className="space-y-1 mb-4">
-                      {product.details.map((detail, index) => (
-                        <li key={index} className="text-sm">
-                          <span className="text-gray-600 font-medium">{detail.label}:</span>
-                          <span className="text-gray-800 ml-1">{detail.value}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <button className="w-full bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition-colors font-semibold">
-                      Get Quote
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* View Complete Range */}
-          <div className="bg-green-800 text-white rounded-lg p-6 flex flex-col justify-between relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 opacity-20">
-              <img
-                src="/natural-cocoa-powder.png"
-                alt="Natural Cocoa Powder"
-                className="w-full h-full object-cover rounded-full"
-              />
-            </div>
-            <div className="relative z-10">
-              <h2 className="text-2xl font-bold mb-4">View Complete Range of products</h2>
-              <div className="flex items-center space-x-2">
-                <span className="text-lg">Explore Now</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 9H0V7H8V0L16 8L8 16V9Z" fill="currentColor" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {products.slice(2).map((product) => (
+        {/* Featured Categories Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          {categories.map((category) => (
             <div
-              key={product.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+              key={category.id}
+              className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col"
             >
-              <div className="h-40 bg-gray-100 flex items-center justify-center p-4">
+              {/* Image Section with White Background */}
+              <div className="relative h-32 bg-gray-50 p-4 flex items-center justify-center flex-shrink-0">
                 <img
-                  src={product.image || "/placeholder.svg"}
-                  alt={product.name}
-                  className="max-h-full max-w-full object-contain"
+                  src={category.image || "/placeholder.svg"}
+                  alt={category.name}
+                  className="max-h-20 max-w-20 object-contain drop-shadow-sm"
                 />
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-800 mb-2 line-clamp-2">{product.name}</h3>
-                <div className="text-xl font-bold text-green-800 mb-3">
-                  <span className="text-orange-500">{product.price}</span>
-                  <span className="text-xs text-gray-600 font-normal">{product.unit}</span>
+                {/* Quality Badge */}
+                <div className={`absolute top-3 right-3 text-xs font-semibold px-2 py-1 rounded-full ${category.badgeColor}`}>
+                  {category.badge}
                 </div>
-                <ul className="space-y-1 mb-4">
-                  {product.details.slice(0, 3).map((detail, index) => (
-                    <li key={index} className="text-xs">
-                      <span className="text-gray-600 font-medium">{detail.label}:</span>
-                      <span className="text-gray-800 ml-1">{detail.value}</span>
-                    </li>
+              </div>
+
+              {/* Content Section - Flexible to fill remaining space */}
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="font-bold text-gray-900 mb-2 text-sm leading-tight group-hover:text-green-600 transition-colors">
+                  {category.name}
+                </h3>
+                <p className="text-gray-600 text-xs mb-3 line-clamp-2">
+                  {category.description}
+                </p>
+                
+                {/* Features - Fixed height container */}
+                <div className="flex flex-wrap gap-1 mb-4 min-h-[2.5rem] items-start">
+                  {category.features.slice(0, 2).map((feature, index) => (
+                    <span
+                      key={index}
+                      className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-md"
+                    >
+                      {feature}
+                    </span>
                   ))}
-                </ul>
-                <button className="w-full bg-orange-500 text-white py-2 px-3 rounded hover:bg-orange-600 transition-colors font-semibold text-sm">
-                  Get Quote
-                </button>
+                </div>
+
+                {/* CTA Button - Pushed to bottom */}
+                <div className="mt-auto">
+                  <button className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2.5 px-4 rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-200 text-sm font-semibold shadow-sm">
+                    Explore
+                  </button>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="bg-green-800 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
-            View All Products
-          </button>
+        {/* Bottom Action Section */}
+        <div className="bg-gradient-to-r from-green-800 via-green-700 to-green-800 rounded-2xl p-8 text-center text-white relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full -translate-x-20 -translate-y-20"></div>
+            <div className="absolute bottom-0 right-0 w-32 h-32 bg-white rounded-full translate-x-16 translate-y-16"></div>
+          </div>
+          
+          <div className="relative z-10">
+            <h3 className="text-2xl font-bold mb-3">Complete Product Portfolio</h3>
+            <p className="text-green-100 mb-6 max-w-2xl mx-auto">
+              Download our comprehensive product catalog with detailed specifications, 
+              certifications, and technical data sheets.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button
+                className="bg-white text-green-800 px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg flex items-center gap-2"
+                onClick={() => window.open("/Product List.pdf", "_blank")}
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download Catalog
+              </button>
+              
+              <div className="flex items-center gap-4 text-sm text-green-100">
+                <div className="flex items-center gap-1">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  500+ Products
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  GMP Certified
+                </div>
+                <div className="flex items-center gap-1">
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  Global Export
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Trust Indicators */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 text-center">
+          {[
+            { icon: "🏆", label: "25+ Years", desc: "Experience" },
+            { icon: "🌱", label: "500+", desc: "Natural Products" },
+            { icon: "🔬", label: "ISO", desc: "Certified Labs" },
+            { icon: "🌍", label: "50+", desc: "Countries" },
+          ].map((item, index) => (
+            <div key={index} className="text-center">
+              <div className="text-2xl mb-2">{item.icon}</div>
+              <div className="font-bold text-gray-900">{item.label}</div>
+              <div className="text-sm text-gray-600">{item.desc}</div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -28,7 +28,11 @@ const Navbar: React.FC = () => {
   }
 
   const downloadBrochure = () => {
-    window.open("pura-vida.pdf", "_blank")
+    window.open("/Product List.pdf", "_blank")
+  }
+
+  const downloadProductList = () => {
+    window.open("/Product List.pdf", "_blank")
   }
 
   return (
@@ -59,9 +63,9 @@ const Navbar: React.FC = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Mumbai, Maharashtra, India
+                     169, Uttam Nagar West, New Delhi - 110059, India
                   </span>
-                  <span>GST No.- 27AABCP1234N1ZV</span>
+                  <span>GST No.- 07ABCFP5743NIZS</span>
                 </div>
               </div>
             </div>
@@ -77,8 +81,8 @@ const Navbar: React.FC = () => {
                     </svg>
                   </div>
                   <div className="text-sm">
-                    <div className="font-semibold text-gray-800">Call 09797154352</div>
-                    <div className="text-gray-500 text-xs">85% Response rate</div>
+                    <div className="font-semibold text-gray-800">Call 9811647596</div>
+                    <div className="text-gray-500 text-xs">89% Response rate</div>
                   </div>
                 </div>
               </div>
@@ -89,7 +93,7 @@ const Navbar: React.FC = () => {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                <span className="font-medium">Send Email</span>
+                <span className="font-semibold text-lg tracking-wider">Send Email</span>
               </button>
             </div>
           </div>
@@ -100,14 +104,14 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto">
           <div className="flex items-center justify-between">
             {/* Left Navigation */}
-            <div className="ps-navigation__left">
+            <div className="ps-navigation__left ml-8">
               <nav className="ps-main-menu">
                 <ul className="menu flex items-center">
                   {/* Products Mega Menu */}
                   <li className="has-mega-menu relative group">
                     <Link
                       href="/products"
-                      className="flex items-center space-x-2 text-white hover:text-orange-400 transition-colors py-6 px-4"
+                      className="flex items-center space-x-2 text-white hover:text-orange-400 transition-colors py-6 px-4 text-lg font-semibold tracking-wider"
                     >
                       <svg width="21" height="21" viewBox="0 0 21 21" fill="none" className="w-5 h-5">
                         <g clipPath="url(#clip0_18_48)">
@@ -135,232 +139,108 @@ const Navbar: React.FC = () => {
 
                     <div className="mega-menu absolute top-full left-0 w-screen bg-white text-gray-800 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                       <div className="container mx-auto">
-                        <div className="mega-menu__row grid grid-cols-4 gap-8 p-8">
+                        <div className="mega-menu__row grid grid-cols-7 gap-4 p-8">
                           <div className="mega-menu__column">
-                            <Link href="/herbal-extract">
-                              <h4 className="font-bold text-green-800 mb-4 hover:text-orange-500">Herbal Extract</h4>
+                            <Link href="/standardized-herbal-extracts">
+                              <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">STANDARDIZED HERBAL EXTRACTS</h4>
                             </Link>
-                            <ul className="sub-menu--mega space-y-2 text-sm">
-                              <li>
-                                <Link
-                                  href="/herbal-extract#stevia-leaf-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Stevia Leaf Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-extract#saw-palmetto-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Saw Palmetto Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-extract#rehmannia-glutinosa-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Rehmannia Glutinosa Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-extract#khelline-extract-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Khelline Extract Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-extract#black-current-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Black Current Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-extract"
-                                  className="mm_va text-sm uppercase text-orange-500 font-medium hover:text-orange-600 block py-1"
-                                >
-                                  View All Products
-                                </Link>
-                              </li>
+                            <ul className="sub-menu--mega space-y-1 text-xs max-h-64 overflow-y-auto">
+                              <li><Link href="/standardized-herbal-extracts#acai-berry-extract" className="hover:text-green-800 block py-0.5">Acai Berry</Link></li>
+                              <li><Link href="/standardized-herbal-extracts#amla-extract" className="hover:text-green-800 block py-0.5">Amla</Link></li>
+                              <li><Link href="/standardized-herbal-extracts#ashwagandha-extract" className="hover:text-green-800 block py-0.5">Ashwagandha</Link></li>
+                              <li><Link href="/standardized-herbal-extracts#curcumin-extract" className="hover:text-green-800 block py-0.5">Curcumin</Link></li>
+                              <li><Link href="/standardized-herbal-extracts#ginger-extract" className="hover:text-green-800 block py-0.5">Ginger</Link></li>
+                              <li><Link href="/standardized-herbal-extracts#turmeric-extract" className="hover:text-green-800 block py-0.5">Turmeric</Link></li>
+                              <li><Link href="/standardized-herbal-extracts" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
 
                           <div className="mega-menu__column">
-                            <Link href="/herbal-powder">
-                              <h4 className="font-bold text-green-800 mb-4 hover:text-orange-500">Herbal Powder</h4>
+                            <Link href="/essential-oils">
+                              <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">ESSENTIAL OILS</h4>
                             </Link>
-                            <ul className="sub-menu--mega space-y-2 text-sm">
-                              <li>
-                                <Link
-                                  href="/herbal-powder#red-chilli-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Red Chilli Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-powder#25kg-desiccated-coconut-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  25Kg Desiccated Coconut Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-powder#5kg-desiccated-coconut-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  5Kg Desiccated Coconut Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-powder#whole-egg-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Whole Egg Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-powder#wild-mango-seed-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Wild Mango Seed Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/herbal-powder"
-                                  className="mm_va text-sm uppercase text-orange-500 font-medium hover:text-orange-600 block py-1"
-                                >
-                                  View All Products
-                                </Link>
-                              </li>
+                            <ul className="sub-menu--mega space-y-1 text-xs">
+                              <li><Link href="/essential-oils#clove-leaf-oil" className="hover:text-green-800 block py-0.5">Clove Oil</Link></li>
+                              <li><Link href="/essential-oils#eucalyptus-oil" className="hover:text-green-800 block py-0.5">Eucalyptus</Link></li>
+                              <li><Link href="/essential-oils#ginger-oil" className="hover:text-green-800 block py-0.5">Ginger Oil</Link></li>
+                              <li><Link href="/essential-oils#lavender-oil" className="hover:text-green-800 block py-0.5">Lavender</Link></li>
+                              <li><Link href="/essential-oils#peppermint-oil" className="hover:text-green-800 block py-0.5">Peppermint</Link></li>
+                              <li><Link href="/essential-oils#turmeric-oil" className="hover:text-green-800 block py-0.5">Turmeric Oil</Link></li>
+                              <li><Link href="/essential-oils" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
 
                           <div className="mega-menu__column">
-                            <Link href="/medicinal-herbal-extracts">
-                              <h4 className="font-bold text-green-800 mb-4 hover:text-orange-500">
-                                Medicinal Herbal Extracts
-                              </h4>
+                            <Link href="/oleoresins">
+                              <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">OLEORESINS</h4>
                             </Link>
-                            <ul className="sub-menu--mega space-y-2 text-sm">
-                              <li>
-                                <Link
-                                  href="/medicinal-herbal-extracts#uva-ursi-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Uva Ursi Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/medicinal-herbal-extracts#green-tea-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Green Tea Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/medicinal-herbal-extracts#yarba-mate-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Yarba Mate Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/medicinal-herbal-extracts#tongkat-ali-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Tongkat Ali Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/medicinal-herbal-extracts#barley-grass-extract"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Barley Grass Extract
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/medicinal-herbal-extracts"
-                                  className="mm_va text-sm uppercase text-orange-500 font-medium hover:text-orange-600 block py-1"
-                                >
-                                  View All Products
-                                </Link>
-                              </li>
+                            <ul className="sub-menu--mega space-y-1 text-xs">
+                              <li><Link href="/oleoresins#black-pepper-oleoresin" className="hover:text-green-800 block py-0.5">Black Pepper</Link></li>
+                              <li><Link href="/oleoresins#capsicum-oleoresin" className="hover:text-green-800 block py-0.5">Capsicum</Link></li>
+                              <li><Link href="/oleoresins#cinnamon-oleoresin" className="hover:text-green-800 block py-0.5">Cinnamon</Link></li>
+                              <li><Link href="/oleoresins#ginger-oleoresin" className="hover:text-green-800 block py-0.5">Ginger</Link></li>
+                              <li><Link href="/oleoresins#paprika-oleoresin" className="hover:text-green-800 block py-0.5">Paprika</Link></li>
+                              <li><Link href="/oleoresins#turmeric-oleoresin" className="hover:text-green-800 block py-0.5">Turmeric</Link></li>
+                              <li><Link href="/oleoresins" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
 
                           <div className="mega-menu__column">
-                            <Link href="/spray-dried-powders">
-                              <h4 className="font-bold text-green-800 mb-4 hover:text-orange-500">
-                                Spray Dried Powders
-                              </h4>
+                            <Link href="/fruit-juice-powders">
+                              <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">FRUIT JUICE POWDERS</h4>
                             </Link>
-                            <ul className="sub-menu--mega space-y-2 text-sm">
-                              <li>
-                                <Link
-                                  href="/spray-dried-powders#spray-dried-lemon-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Spray Dried Lemon Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/spray-dried-powders#natural-cocoa-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Natural Cocoa Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/spray-dried-powders#dehydrated-radish-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Dehydrated Radish Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/spray-dried-powders#herbal-henna-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Herbal Henna Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/spray-dried-powders#moringa-leaf-powder"
-                                  className="hover:text-green-800 block py-1"
-                                >
-                                  Moringa Leaf Powder
-                                </Link>
-                              </li>
-                              <li>
-                                <Link
-                                  href="/spray-dried-powders"
-                                  className="mm_va text-sm uppercase text-orange-500 font-medium hover:text-orange-600 block py-1"
-                                >
-                                  View All Products
-                                </Link>
-                              </li>
+                            <ul className="sub-menu--mega space-y-1 text-xs">
+                              <li><Link href="/fruit-juice-powders#amla-juice-powder" className="hover:text-green-800 block py-0.5">Amla</Link></li>
+                              <li><Link href="/fruit-juice-powders#beet-root-juice-powder" className="hover:text-green-800 block py-0.5">Beet Root</Link></li>
+                              <li><Link href="/fruit-juice-powders#mango-juice-powder" className="hover:text-green-800 block py-0.5">Mango</Link></li>
+                              <li><Link href="/fruit-juice-powders#orange-juice-powder" className="hover:text-green-800 block py-0.5">Orange</Link></li>
+                              <li><Link href="/fruit-juice-powders#pomegranate-juice-powder" className="hover:text-green-800 block py-0.5">Pomegranate</Link></li>
+                              <li><Link href="/fruit-juice-powders" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
+                            </ul>
+                          </div>
+
+                          <div className="mega-menu__column">
+                            <Link href="/phytochemicals">
+                              <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">PHYTOCHEMICALS</h4>
+                            </Link>
+                            <ul className="sub-menu--mega space-y-1 text-xs">
+                              <li><Link href="/phytochemicals#berberine-hcl" className="hover:text-green-800 block py-0.5">Berberine HCL</Link></li>
+                              <li><Link href="/phytochemicals#curcumin" className="hover:text-green-800 block py-0.5">Curcumin</Link></li>
+                              <li><Link href="/phytochemicals#natural-caffeine" className="hover:text-green-800 block py-0.5">Caffeine</Link></li>
+                              <li><Link href="/phytochemicals#piperine" className="hover:text-green-800 block py-0.5">Piperine</Link></li>
+                              <li><Link href="/phytochemicals#quercetin-dihydrate" className="hover:text-green-800 block py-0.5">Quercetin</Link></li>
+                              <li><Link href="/phytochemicals#resveratrol" className="hover:text-green-800 block py-0.5">Resveratrol</Link></li>
+                              <li><Link href="/phytochemicals" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
+                            </ul>
+                          </div>
+
+                          <div className="mega-menu__column">
+                            <Link href="/amino-acids">
+                              <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">AMINO ACIDS</h4>
+                            </Link>
+                            <ul className="sub-menu--mega space-y-1 text-xs">
+                              <li><Link href="/amino-acids#acetyl-l-carnitine" className="hover:text-green-800 block py-0.5">Acetyl L-Carnitine</Link></li>
+                              <li><Link href="/amino-acids#bcaa-blend" className="hover:text-green-800 block py-0.5">BCAA Blend</Link></li>
+                              <li><Link href="/amino-acids#creatine-monohydrate" className="hover:text-green-800 block py-0.5">Creatine</Link></li>
+                              <li><Link href="/amino-acids#l-arginine" className="hover:text-green-800 block py-0.5">L-Arginine</Link></li>
+                              <li><Link href="/amino-acids#l-glutathione" className="hover:text-green-800 block py-0.5">L-Glutathione</Link></li>
+                              <li><Link href="/amino-acids#l-theanine" className="hover:text-green-800 block py-0.5">L-Theanine</Link></li>
+                              <li><Link href="/amino-acids" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
+                            </ul>
+                          </div>
+
+                          <div className="mega-menu__column">
+                            <Link href="/nutraceuticals">
+                              <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">NUTRACEUTICALS</h4>
+                            </Link>
+                            <ul className="sub-menu--mega space-y-1 text-xs">
+                              <li><Link href="/nutraceuticals#astaxanthin" className="hover:text-green-800 block py-0.5">Astaxanthin</Link></li>
+                              <li><Link href="/nutraceuticals#coenzyme-q10" className="hover:text-green-800 block py-0.5">CoQ10</Link></li>
+                              <li><Link href="/nutraceuticals#lutein" className="hover:text-green-800 block py-0.5">Lutein</Link></li>
+                              <li><Link href="/nutraceuticals#omega-3-fatty-acids" className="hover:text-green-800 block py-0.5">Omega-3</Link></li>
+                              <li><Link href="/nutraceuticals#spirulina-powder" className="hover:text-green-800 block py-0.5">Spirulina</Link></li>
+                              <li><Link href="/nutraceuticals#whey-protein" className="hover:text-green-800 block py-0.5">Whey Protein</Link></li>
+                              <li><Link href="/nutraceuticals" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
                         </div>
@@ -381,7 +261,7 @@ const Navbar: React.FC = () => {
                   <li className="has-mega-menu relative group">
                     <Link
                       href="/about"
-                      className="d-flex conta_p align-items-center flex items-center space-x-2 text-white hover:text-orange-400 transition-colors py-6 px-4"
+                      className="d-flex conta_p align-items-center flex items-center space-x-2 text-white hover:text-orange-400 transition-colors py-6 px-4 text-lg font-semibold tracking-wider"
                     >
                       <span>About Us</span>
                       <span className="sub-toggle">
@@ -411,6 +291,14 @@ const Navbar: React.FC = () => {
                                 Download Brochure
                               </button>
                             </li>
+                            <li className="mega-menu__column w-full">
+                              <button
+                                onClick={downloadProductList}
+                                className="cp block hover:text-green-800 py-2 text-left w-full cursor-pointer"
+                              >
+                                Download Product List
+                              </button>
+                            </li>
                           </ul>
                         </div>
                       </div>
@@ -421,7 +309,7 @@ const Navbar: React.FC = () => {
                   <li className="has-mega-menu">
                     <Link
                       href="/contact"
-                      className="text-white hover:text-orange-400 transition-colors py-6 px-4 block"
+                      className="text-white hover:text-orange-400 transition-colors py-6 px-4 block text-lg font-semibold tracking-wider"
                     >
                       Contact Us
                     </Link>
@@ -431,7 +319,7 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Right Navigation - Search */}
-            <div className="ps-navigation__right">
+            <div className="ps-navigation__right mr-10">
               <div className="ps-header__search header__search22">
                 <form onSubmit={handleSearchSubmit} id="cse-search-box" method="get" name="frm">
                   <div className="ps-search-table">
@@ -466,7 +354,7 @@ const Navbar: React.FC = () => {
                               fill="white"
                             ></path>
                           </svg>
-                          <span>Search</span>
+                          <span className="font-semibold text-lg tracking-wider">Search</span>
                         </button>
                       </div>
                       <div

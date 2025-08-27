@@ -178,7 +178,7 @@ const CompanyInfoSection: React.FC = () => {
               </div>
               <div>
                 <h2 className="text-xs text-gray-600 mb-1 uppercase font-medium">GST No.</h2>
-                <h3 className="text-lg font-bold text-green-800">27PURPV2018H1ZX</h3>
+                <h3 className="text-lg font-bold text-green-800">07ABCFP5743NIZS</h3>
               </div>
             </div>
 

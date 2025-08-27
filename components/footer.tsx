@@ -1,3 +1,5 @@
+"use client"
+
 import type React from "react"
 import Link from "next/link"
 
@@ -55,9 +57,12 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-gray-200 hover:text-white transition-colors">
+                <button
+                  onClick={() => window.open("/Product List.pdf", "_blank")}
+                  className="text-gray-200 hover:text-white transition-colors text-left w-full"
+                >
                   PRODUCTS
-                </Link>
+                </button>
               </li>
               <li>
                 <Link href="/contact" className="text-gray-200 hover:text-white transition-colors">
@@ -117,7 +122,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="border-t border-green-700 mt-12 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 PuraVida. All rights reserved. | GST No: 27PURPV2018H1ZX | IEC: PURPV2018H
+            © 2024 PuraVida. All rights reserved. | GST No: 07ABCFP5743NIZS | IEC: PURPV2018H
           </p>
         </div>
       </div>
