@@ -6,24 +6,15 @@ const ProductCategoriesSection: React.FC = () => {
   const categories = [
     {
       id: 1,
-      name: "STANDARDIZED HERBAL",
-      description: "Premium quality standardized herbal extracts",
+      name: "STANDARDIZED HERBAL EXTRACTS",
+      description: "Premium quality standardized herbal extracts and pure botanical extracts",
       image: "/plant-extract-powder.png",
-      badge: "GMP Certified",
+      badge: "GMP & ISO Certified",
       badgeColor: "bg-green-100 text-green-800",
-      features: ["99%+ Active Compounds", "Powder Extract", "Pharmaceutical Grade"],
+      features: ["99%+ Active Compounds", "Advanced Extraction", "Pharmaceutical Grade", "Pure & Natural"],
     },
     {
       id: 2,
-      name: "EXTRACTS",
-      description: "Pure botanical extracts for various applications",
-      image: "/green-tea-extract-powder.png",
-      badge: "ISO Certified",
-      badgeColor: "bg-emerald-100 text-emerald-800",
-      features: ["Advanced Extraction", "Pharmaceutical Grade", "Pure & Natural"],
-    },
-    {
-      id: 3,
       name: "ESSENTIAL OILS",
       description: "Therapeutic grade essential oils",
       image: "/black-pepper-essential-oil-bottle.png",
@@ -32,7 +23,7 @@ const ProductCategoriesSection: React.FC = () => {
       features: ["Steam Distillation", "Therapeutic Grade", "Aromatic"],
     },
     {
-      id: 4,
+      id: 3,
       name: "OLEORESINS",
       description: "Concentrated spice oleoresins",
       image: "/black-pepper-oleoresin-bottle.png",
@@ -41,7 +32,7 @@ const ProductCategoriesSection: React.FC = () => {
       features: ["Liquid Extract", "Food & Pharma", "Concentrated"],
     },
     {
-      id: 5,
+      id: 4,
       name: "FRUIT JUICE POWDERS",
       description: "Natural fruit juice concentrates",
       image: "/orange-juice-powder.png",
@@ -50,7 +41,7 @@ const ProductCategoriesSection: React.FC = () => {
       features: ["Spray Dried", "Instant Soluble", "Natural Source"],
     },
     {
-      id: 6,
+      id: 5,
       name: "PHYTOCHEMICALS",
       description: "Isolated plant compounds",
       image: "/curcumin-powder-yellow.png",
@@ -59,7 +50,7 @@ const ProductCategoriesSection: React.FC = () => {
       features: ["Isolated Compounds", "Analytical Standard", "Research Grade"],
     },
     {
-      id: 7,
+      id: 6,
       name: "AMINO ACIDS",
       description: "Essential amino acids",
       image: "/l-arginine-powder-white.png",
@@ -68,7 +59,7 @@ const ProductCategoriesSection: React.FC = () => {
       features: ["Crystalline Powder", "Essential & Non-Essential", "Pure"],
     },
     {
-      id: 8,
+      id: 7,
       name: "NUTRACEUTICALS",
       description: "Health supplements",
       image: "/coenzyme-q10-powder.png",
@@ -95,9 +86,9 @@ const ProductCategoriesSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Featured Categories Grid */}
+        {/* Featured Categories Grid - First 4 cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {categories.map((category) => (
+          {categories.slice(0, 4).map((category) => (
             <div
               key={category.id}
               className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-full flex flex-col"
@@ -123,7 +114,60 @@ const ProductCategoriesSection: React.FC = () => {
                 <p className="text-gray-600 text-xs mb-3 line-clamp-2">
                   {category.description}
                 </p>
-                
+
+                {/* Features - Fixed height container */}
+                <div className="flex flex-wrap gap-1 mb-4 min-h-[2.5rem] items-start">
+                  {category.features.slice(0, 2).map((feature, index) => (
+                    <span
+                      key={index}
+                      className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-md"
+                    >
+                      {feature}
+                    </span>
+                  ))}
+                </div>
+
+                {/* CTA Button - Pushed to bottom */}
+                <div className="mt-auto">
+                  <button className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2.5 px-4 rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-200 text-sm font-semibold shadow-sm">
+                    Explore
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Last 3 cards centered independently */}
+        <div className="flex justify-center gap-6 mb-8">
+          {categories.slice(4).map((category) => (
+            <div
+              key={category.id}
+              className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col"
+              style={{ width: '300px' }}
+            >
+              {/* Image Section with White Background */}
+              <div className="relative h-32 bg-gray-50 p-4 flex items-center justify-center flex-shrink-0">
+                <img
+                  src={category.image || "/placeholder.svg"}
+                  alt={category.name}
+                  className="max-h-20 max-w-20 object-contain drop-shadow-sm"
+                />
+                {/* Quality Badge */}
+                <div className={`absolute top-3 right-3 text-xs font-semibold px-2 py-1 rounded-full ${category.badgeColor}`}>
+                  {category.badge}
+                </div>
+              </div>
+
+              {/* Content Section - Flexible to fill remaining space */}
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="font-bold text-gray-900 mb-2 text-sm leading-tight group-hover:text-green-600 transition-colors">
+                  {category.name}
+                </h3>
+                <p className="text-gray-600 text-xs mb-3 line-clamp-2">
+                  {category.description}
+                </p>
+
                 {/* Features - Fixed height container */}
                 <div className="flex flex-wrap gap-1 mb-4 min-h-[2.5rem] items-start">
                   {category.features.slice(0, 2).map((feature, index) => (

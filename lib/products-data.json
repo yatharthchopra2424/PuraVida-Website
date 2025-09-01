@@ -1,0 +1,2005 @@
+{
+  "categories": [
+    {
+      "title": "Standardized Herbal Extracts",
+      "products": [
+        {
+          "name": "Acai Berry Extract",
+          "image": "/acai-berry-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Euterpe oleracea" },
+            { "label": "Active Ingredient", "value": "Polyphenols 10%–20%" },
+            { "label": "Application", "value": "Antioxidant Support, Skin Health, Anti-Aging" }
+          ]
+        },
+        {
+          "name": "Acerola Cherry Extract",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/acerola-cherry-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Malpighia glabra" },
+            { "label": "Active Ingredient", "value": "Natural Vitamin C 17%–25%" },
+            { "label": "Application", "value": "Immunity Boost, Skin Health, Antioxidant Support" }
+          ]
+        },
+        {
+          "name": "Aloe Vera Extract",
+          "price": "₹1,800",
+          "unit": "/Kg",
+          "image": "/aloe-vera-extract.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Aloe barbadensis" },
+            { "label": "Active Ingredient", "value": "Polysaccharides / 200:1" },
+            { "label": "Application", "value": "Cosmetics" }
+          ]
+        },
+        {
+          "name": "Amaltas Extract",
+          "price": "₹2,200",
+          "unit": "/Kg",
+          "image": "/amaltas-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Cassia fistula" },
+            { "label": "Active Ingredient", "value": "Anthraquinones 5%" },
+            { "label": "Application", "value": "Natural Laxative, Detox Support, Skin Health" }
+          ]
+        },
+        {
+          "name": "Amla Extract",
+          "price": "₹1,600",
+          "unit": "/Kg",
+          "image": "/amla-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Emblica officinalis" },
+            { "label": "Active Ingredient", "value": "Tannins 20%–50%" },
+            { "label": "Application", "value": "Skin & Hair Care, Anti-Aging" }
+          ]
+        },
+        {
+          "name": "Anar Chilka Extract",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/anar-chilka-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Punica granatum (Peel)" },
+            { "label": "Active Ingredient", "value": "Ellagic Acid 20%–40%" },
+            { "label": "Application", "value": "Antioxidant, Gut Health, Oral & Skin Care Support" }
+          ]
+        },
+        {
+          "name": "Apamarga Extract",
+          "price": "₹1,900",
+          "unit": "/Kg",
+          "image": "/apamarga-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Achyranthes aspera" },
+            { "label": "Active Ingredient", "value": "Saponins 10%" },
+            { "label": "Application", "value": "Diuretic Support, Digestive Health, Anti-inflammatory" }
+          ]
+        },
+        {
+          "name": "Apple Extract",
+          "price": "₹2,100",
+          "unit": "/Kg",
+          "image": "/apple-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Malus domestica" },
+            { "label": "Active Ingredient", "value": "Polyphenols 40%" },
+            { "label": "Application", "value": "Antioxidant, Skin Health, Cardiovascular Support" }
+          ]
+        },
+        {
+          "name": "Arjuna Extract",
+          "price": "₹2,600",
+          "unit": "/Kg",
+          "image": "/arjuna-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Terminalia arjuna" },
+            { "label": "Active Ingredient", "value": "Arjunolic Acid, Tannins 0.1%" },
+            { "label": "Application", "value": "Cardiac Health" }
+          ]
+        },
+        {
+          "name": "Artichoke Extract",
+          "price": "₹3,400",
+          "unit": "/Kg",
+          "image": "/artichoke-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Cynara scolymus" },
+            { "label": "Active Ingredient", "value": "Cynarin 2.5%" },
+            { "label": "Application", "value": "Liver Health, Digestive Support, Cholesterol Management" }
+          ]
+        },
+        {
+          "name": "Ashoka Chaal Extract",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/ashoka-chaal-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Saraca asoca" },
+            { "label": "Active Ingredient", "value": "Tannins 10%–20%" },
+            { "label": "Application", "value": "Female Reproductive Health, Uterine Tonic, Menstrual Support" }
+          ]
+        },
+        {
+          "name": "Astragalus Extract",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/astragalus-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Astragalus membranaceus" },
+            { "label": "Active Ingredient", "value": "Polysaccharides 50%" },
+            { "label": "Application", "value": "Immune Support, Anti-aging, Adaptogen" }
+          ]
+        },
+        {
+          "name": "Ashwagandha Extract",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/ashwagandha-extract-powder-brown.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Withania somnifera" },
+            { "label": "Active Ingredient", "value": "Withanolides 1.5%–10%" },
+            { "label": "Application", "value": "Stress Relief, Adaptogen" }
+          ]
+        },
+        {
+          "name": "Bacopa Extract",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/bacopa-extract-powder-green.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Bacopa monnieri" },
+            { "label": "Active Ingredient", "value": "Bacosides 20%–50%" },
+            { "label": "Application", "value": "Memory Support" }
+          ]
+        },
+        {
+          "name": "Baheda Extract",
+          "price": "₹2,100",
+          "unit": "/Kg",
+          "image": "/baheda-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Terminalia bellirica" },
+            { "label": "Active Ingredient", "value": "Tannins 30%" },
+            { "label": "Application", "value": "Digestive Harmony" }
+          ]
+        },
+        {
+          "name": "Banaba Extract",
+          "price": "₹4,800",
+          "unit": "/Kg",
+          "image": "/banaba-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Lagerstroemia speciosa" },
+            { "label": "Active Ingredient", "value": "Corosolic Acid 1%–2%" },
+            { "label": "Application", "value": "Blood Sugar, Weight" }
+          ]
+        },
+        {
+          "name": "Beet Root Extract",
+          "price": "₹1,800",
+          "unit": "/Kg",
+          "image": "/beetroot-juice-powder-red.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Beta vulgaris" },
+            { "label": "Active Ingredient", "value": "Betanin, Nitrates" },
+            { "label": "Application", "value": "Sports Nutrition, Heart Health" }
+          ]
+        },
+        {
+          "name": "Berberine Extract",
+          "price": "₹8,500",
+          "unit": "/Kg",
+          "image": "/berberine-hcl-powder.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Berberis aristata" },
+            { "label": "Active Ingredient", "value": "Berberine 97% (HPLC)" },
+            { "label": "Application", "value": "Blood Sugar Support, Gut Health, Anti-microbial" }
+          ]
+        },
+        {
+          "name": "Beta Carotene Extract",
+          "price": "₹6,200",
+          "unit": "/Kg",
+          "image": "/beta-carotene-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Daucus carota" },
+            { "label": "Active Ingredient", "value": "Beta Carotene 30%" },
+            { "label": "Application", "value": "Skin Health, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Bhringraj Extract",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/bhringraj-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Eclipta alba" },
+            { "label": "Active Ingredient", "value": "Bitters 6%" },
+            { "label": "Application", "value": "Liver Support" }
+          ]
+        },
+        {
+          "name": "Bhumi Amla Extract",
+          "price": "₹2,600",
+          "unit": "/Kg",
+          "image": "/bhumi-amla-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Phyllanthus niruri" },
+            { "label": "Active Ingredient", "value": "Bitters 5%" },
+            { "label": "Application", "value": "Liver, Kidney, Diabetes" }
+          ]
+        },
+        {
+          "name": "Bidarikand Extract",
+          "price": "₹3,400",
+          "unit": "/Kg",
+          "image": "/bidarikand-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Pueraria tuberosa" },
+            { "label": "Active Ingredient", "value": "Saponins 20%" },
+            { "label": "Application", "value": "Male Vitality, Rejuvenation, Muscle Strength Support" }
+          ]
+        },
+        {
+          "name": "Bilberry Extract",
+          "price": "₹7,200",
+          "unit": "/Kg",
+          "image": "/bilberry-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Vaccinium myrtillus" },
+            { "label": "Active Ingredient", "value": "Anthocyanins 25% (UV)" },
+            { "label": "Application", "value": "Eye Health, Antioxidant, Vision Support" }
+          ]
+        },
+        {
+          "name": "Bitter Melon Extract",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/bitter-melon-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Momordica charantia" },
+            { "label": "Active Ingredient", "value": "Charantin 0.5%, Bitters 10% & 20%" },
+            { "label": "Application", "value": "Blood Sugar" }
+          ]
+        },
+        {
+          "name": "Black Cohosh Extract",
+          "price": "₹6,800",
+          "unit": "/Kg",
+          "image": "/black-cohosh-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Cimicifuga racemosa" },
+            { "label": "Active Ingredient", "value": "Triterpene Glycosides 2.5%" },
+            { "label": "Application", "value": "Menopause Support, Hormonal Balance, Women's Health" }
+          ]
+        },
+        {
+          "name": "Black Currant Extract",
+          "price": "₹5,400",
+          "unit": "/Kg",
+          "image": "/black-currant-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Ribes nigrum" },
+            { "label": "Active Ingredient", "value": "Anthocyanins 25% (UV)" },
+            { "label": "Application", "value": "Vision Support, Immunity Boost, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Black Pepper Extract",
+          "price": "₹3,800",
+          "unit": "/Kg",
+          "image": "/black-pepper-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Piper nigrum" },
+            { "label": "Active Ingredient", "value": "Piperine 95%" },
+            { "label": "Application", "value": "Bioavailability, Respiratory" }
+          ]
+        },
+        {
+          "name": "Blueberry Extract",
+          "price": "₹6,500",
+          "unit": "/Kg",
+          "image": "/blueberry-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Vaccinium corymbosum" },
+            { "label": "Active Ingredient", "value": "Anthocyanins 25% (UV)" },
+            { "label": "Application", "value": "Eye Health, Cognitive Support, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Boswellia Extract",
+          "price": "₹5,200",
+          "unit": "/Kg",
+          "image": "/boswellia-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Boswellia serrata" },
+            { "label": "Active Ingredient", "value": "Boswellic Acid 65-80%, AKBA 10-90%" },
+            { "label": "Application", "value": "Joints, Skin, Anti-inflammatory" }
+          ]
+        },
+        {
+          "name": "Burdock Seed Extract",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/burdock-seed-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Arctium lappa (Seeds)" },
+            { "label": "Active Ingredient", "value": "Inulin 10%" },
+            { "label": "Application", "value": "Detoxification, Liver Support, Skin & Blood Purifier" }
+          ]
+        },
+        {
+          "name": "Turmeric Extract",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/turmeric-extract.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Curcuma longa" },
+            { "label": "Active Ingredient", "value": "Curcuminoids 95%" },
+            { "label": "Application", "value": "Anti-inflammatory, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Ginger Extract",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/ginger-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Zingiber officinale" },
+            { "label": "Active Ingredient", "value": "Gingerol 5%" },
+            { "label": "Application", "value": "Digestion, Inflammation" }
+          ]
+        },
+        {
+          "name": "Garlic Extract",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/garlic-extract.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Allium sativum" },
+            { "label": "Active Ingredient", "value": "Allicin 0.5%-1%" },
+            { "label": "Application", "value": "Cardiovascular Support, Immunity Boost, Antimicrobial" }
+          ]
+        },
+        {
+          "name": "Cinnamon Extract",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/cinnamon-extract.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Cinnamomum cassia" },
+            { "label": "Active Ingredient", "value": "Polyphenols 10%-20%" },
+            { "label": "Application", "value": "Antioxidant, Anti-diabetic" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Essential Oils",
+      "products": [
+        {
+          "name": "Clove Leaf Oil",
+          "price": "₹2,200",
+          "unit": "/Kg",
+          "image": "/clove-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Syzygium aromaticum" },
+            { "label": "Active Ingredient", "value": "Eugenol (80–85%)" },
+            { "label": "Primary Application", "value": "Oral Care, Antiseptic, Flavoring, Pain Relief" }
+          ]
+        },
+        {
+          "name": "Cumin Seed Oil",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/cumin-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Cuminum cyminum" },
+            { "label": "Active Ingredient", "value": "Cuminaldehyde (30–45%)" },
+            { "label": "Primary Application", "value": "Digestive Aid, Flavoring, Antioxidant, Antimicrobial" }
+          ]
+        },
+        {
+          "name": "Eucalyptus Oil",
+          "price": "₹1,800",
+          "unit": "/Kg",
+          "image": "/eucalyptus-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Eucalyptus globulus" },
+            { "label": "Active Ingredient", "value": "Eucalyptol (Cineole) 70–85%" },
+            { "label": "Primary Application", "value": "Respiratory Support, Antiseptic" }
+          ]
+        },
+        {
+          "name": "Frankincense Oil",
+          "price": "₹4,500",
+          "unit": "/Kg",
+          "image": "/frankincense-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Boswellia serrata" },
+            { "label": "Active Ingredient", "value": "α-Thujene up to 70%" },
+            { "label": "Primary Application", "value": "Anti-inflammatory, Skincare, Aromatherapy, Stress Relief" }
+          ]
+        },
+        {
+          "name": "Garlic Oil",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/garlic-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Allium sativum" },
+            { "label": "Active Ingredient", "value": "Allicin (varies, unstable), Diallyl disulfide (~50–60%) & Diallyl trisulfide (~10–15%)" },
+            { "label": "Primary Application", "value": "Antimicrobial, Cardiovascular Support, Immune Booster, Flavoring" }
+          ]
+        },
+        {
+          "name": "Ginger Oil",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/ginger-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Zingiber officinale" },
+            { "label": "Active Ingredient", "value": "Zingiberene (~30–35%)" },
+            { "label": "Primary Application", "value": "Digestive Aid, Anti-inflammatory, Muscle Relief, Aromatherapy" }
+          ]
+        },
+        {
+          "name": "Lemongrass Oil",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/lemongrass-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Cymbopogon citratus" },
+            { "label": "Active Ingredient", "value": "Citral (neral + geranial) ~70–80%" },
+            { "label": "Primary Application", "value": "Antimicrobial, Aromatherapy, Insect Repellent, Flavoring, Perfumery" }
+          ]
+        },
+        {
+          "name": "Nutmeg Oil",
+          "price": "₹3,600",
+          "unit": "/Kg",
+          "image": "/nutmeg-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Myristica fragrans" },
+            { "label": "Active Ingredient", "value": "Myristicin ~10–15%, Safrole ~5–10%" },
+            { "label": "Primary Application", "value": "Digestive Aid, Aromatherapy, Flavoring, Antimicrobial" }
+          ]
+        },
+        {
+          "name": "Turmeric Oil",
+          "price": "₹2,500",
+          "unit": "/Kg",
+          "image": "/turmeric-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Curcuma longa" },
+            { "label": "Active Ingredient", "value": "Turmerone (~40–50%), Ar-turmerone (~10–15%)" },
+            { "label": "Primary Application", "value": "Anti-inflammatory, Antioxidant, Skin Care, Aromatherapy" }
+          ]
+        },
+        {
+          "name": "White Pepper Oil",
+          "price": "₹3,800",
+          "unit": "/Kg",
+          "image": "/white-pepper-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Piper nigrum" },
+            { "label": "Active Ingredient", "value": "Limonene (~30–45%), Sabinene (~20–30%)" },
+            { "label": "Primary Application", "value": "Flavoring, Digestive Aid, Anti-inflammatory, Aromatherapy" }
+          ]
+        },
+        {
+          "name": "Black Pepper Oil",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/black-pepper-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Piper nigrum" },
+            { "label": "Active Ingredient", "value": "β-Caryophyllene (~25–35%)" },
+            { "label": "Primary Application", "value": "Digestive Aid, Anti-inflammatory, Pain Relief, Flavoring, Aromatherapy" }
+          ]
+        },
+        {
+          "name": "Lavender Oil",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/lavender-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Lavandula angustifolia" },
+            { "label": "Active Ingredient", "value": "Linalool (~25–45%)" },
+            { "label": "Primary Application", "value": "Relaxation, Aromatherapy, Skincare, Antimicrobial" }
+          ]
+        },
+        {
+          "name": "Peppermint Oil",
+          "price": "₹3,600",
+          "unit": "/Kg",
+          "image": "/peppermint-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Mentha piperita" },
+            { "label": "Active Ingredient", "value": "Menthol (~30–55%)" },
+            { "label": "Primary Application", "value": "Digestive Aid, Cooling Sensation, Aromatherapy, Pain Relief" }
+          ]
+        },
+        {
+          "name": "Tea Tree Oil",
+          "price": "₹5,200",
+          "unit": "/Kg",
+          "image": "/tea-tree-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Melaleuca alternifolia" },
+            { "label": "Active Ingredient", "value": "Terpinen-4-ol (~30–40%)" },
+            { "label": "Primary Application", "value": "Antimicrobial, Antiseptic, Skincare, Acne Treatment" }
+          ]
+        },
+        {
+          "name": "Moringa Oil",
+          "price": "₹3,400",
+          "unit": "/Kg",
+          "image": "/moringa-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Moringa oleifera" },
+            { "label": "Active Ingredient", "value": "Oleic Acid (~70–75%), Palmitic Acid (~6–8%)" },
+            { "label": "Primary Application", "value": "Skin Moisturizer, Anti-inflammatory, Hair Care, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Vetiver Oil",
+          "price": "₹4,800",
+          "unit": "/Kg",
+          "image": "/vetiver-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Vetiveria zizanoides" },
+            { "label": "Active Ingredient", "value": "Khusimol (~15–20%), Vetiselinenol (~10–15%)" },
+            { "label": "Primary Application", "value": "Aromatherapy, Perfumes, Stress Relief, Anti-inflammatory" }
+          ]
+        },
+        {
+          "name": "Neroli Oil",
+          "price": "₹6,800",
+          "unit": "/Kg",
+          "image": "/neroli-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Citrus aurantium (Bitter Orange)" },
+            { "label": "Active Ingredient", "value": "Linalool (~30–40%), Limonene (~10–20%)" },
+            { "label": "Primary Application", "value": "Aromatherapy, Relaxation, Skincare, Perfumes" }
+          ]
+        },
+        {
+          "name": "Bergamot Oil",
+          "price": "₹5,600",
+          "unit": "/Kg",
+          "image": "/bergamot-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Citrus bergamia" },
+            { "label": "Active Ingredient", "value": "Limonene (~30–45%), Linalyl acetate (~15–25%)" },
+            { "label": "Primary Application", "value": "Aromatherapy, Mood Enhancer, Skincare, Flavoring" }
+          ]
+        },
+        {
+          "name": "Patchouli Oil",
+          "price": "₹4,400",
+          "unit": "/Kg",
+          "image": "/patchouli-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Pogostemon cablin" },
+            { "label": "Active Ingredient", "value": "Patchoulol (Patchouli alcohol) (~30–40%)" },
+            { "label": "Primary Application", "value": "Aromatherapy, Perfumery, Anti-inflammatory, Skin Care" }
+          ]
+        },
+        {
+          "name": "Rose Oil",
+          "price": "₹12,000",
+          "unit": "/Kg",
+          "image": "/rose-essential-oil-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Rosa damascene" },
+            { "label": "Active Ingredient", "value": "Citronellol (~20–30%)" },
+            { "label": "Primary Application", "value": "Aromatherapy, Skincare, Mood Enhancer, Perfumery" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oleoresins",
+      "products": [
+        {
+          "name": "Black Pepper Oleoresin",
+          "price": "₹4,500",
+          "unit": "/Kg",
+          "image": "/black-pepper-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Piper nigrum" },
+            { "label": "Active Ingredient", "value": "Piperine (~70–80%)" },
+            { "label": "Primary Application", "value": "Flavoring, Bioavailability Enhancer, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Capsicum Oleoresin",
+          "price": "₹3,800",
+          "unit": "/Kg",
+          "image": "/capsicum-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Capsicum annuum" },
+            { "label": "Active Ingredient", "value": "Capsaicinoids (~60–90%)" },
+            { "label": "Primary Application", "value": "Spice, Pharmaceutical, Topical Analgesic" }
+          ]
+        },
+        {
+          "name": "Cinnamon Oleoresin",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/cinnamon-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Cinnamomum verum / Cinnamomum cassia" },
+            { "label": "Active Ingredient", "value": "Cinnamaldehyde (~50–65%)" },
+            { "label": "Primary Application", "value": "Flavoring, Antimicrobial, Food Preservation, Pharmaceutical" }
+          ]
+        },
+        {
+          "name": "Coffee Oleoresin",
+          "price": "₹3,600",
+          "unit": "/Kg",
+          "image": "/coffee-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Coffea arabica" },
+            { "label": "Active Ingredient", "value": "Caffeine (~0.5–2%)" },
+            { "label": "Primary Application", "value": "Flavoring, Fragrance, Cosmetics, Nutraceuticals" }
+          ]
+        },
+        {
+          "name": "Coriander Oleoresin",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/coriander-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Corandrum sativum" },
+            { "label": "Active Ingredient", "value": "Linalool (~60–75%), α-Pinene (~5–10%)" },
+            { "label": "Primary Application", "value": "Flavoring, Digestive Aid, Fragrance, Antimicrobial" }
+          ]
+        },
+        {
+          "name": "Clove Oleoresin",
+          "price": "₹4,800",
+          "unit": "/Kg",
+          "image": "/clove-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Syzygium aromaticum" },
+            { "label": "Active Ingredient", "value": "Eugenol (~65–75%), β-Caryophyllene (~15–20%)" },
+            { "label": "Primary Application", "value": "Flavoring, Antimicrobial, Oral Care, Pharmaceutical" }
+          ]
+        },
+        {
+          "name": "Cumin Oleoresin",
+          "price": "₹3,400",
+          "unit": "/Kg",
+          "image": "/cumin-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Cuminum cyminum" },
+            { "label": "Active Ingredient", "value": "Cuminaldehyde (~25–35%)" },
+            { "label": "Primary Application", "value": "Flavoring, Digestive Aid, Aromatherapy, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Dill Seed Oleoresin",
+          "price": "₹3,600",
+          "unit": "/Kg",
+          "image": "/dill-seed-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Anethum graveolens" },
+            { "label": "Active Ingredient", "value": "Carvone (~40–60%), Limonene (~30–40%)" },
+            { "label": "Primary Application", "value": "Flavoring, Digestive Support, Antispasmodic, Aromatherapy" }
+          ]
+        },
+        {
+          "name": "Fennel Oleoresin",
+          "price": "₹3,800",
+          "unit": "/Kg",
+          "image": "/fennel-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Foeniculum vulgare" },
+            { "label": "Active Ingredient", "value": "Anethole (~60–80%), Fenchone (~5–10%)" },
+            { "label": "Primary Application", "value": "Flavoring, Digestive Aid, Carminative, Aromatherapy" }
+          ]
+        },
+        {
+          "name": "Fenugreek Oleoresin",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/fenugreek-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Trigonella foenum-graecum" },
+            { "label": "Active Ingredient", "value": "Sotolon (~0.5–1.5%)" },
+            { "label": "Primary Application", "value": "Flavoring, Lactation Support, Nutraceuticals, Ayurvedic Formulations" }
+          ]
+        },
+        {
+          "name": "Garlic Oleoresin",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/garlic-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Allium sativum" },
+            { "label": "Active Ingredient", "value": "Diallyl disulfide (~50–60%), Diallyl trisulfide (~15–25%)" },
+            { "label": "Primary Application", "value": "Flavoring, Antimicrobial, Food Processing, Nutraceuticals" }
+          ]
+        },
+        {
+          "name": "Ginger Oleoresin",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/ginger-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Zingiber officinale" },
+            { "label": "Active Ingredient", "value": "Gingerols (~15–25%), Shogaols (~5–10%)" },
+            { "label": "Primary Application", "value": "Flavoring, Digestive Aid, Pharmaceutical" }
+          ]
+        },
+        {
+          "name": "Hing Oleoresin",
+          "price": "₹5,200",
+          "unit": "/Kg",
+          "image": "/hing-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Ferula asafoetida" },
+            { "label": "Active Ingredient", "value": "Ferulic acid (~10–20%)" },
+            { "label": "Primary Application", "value": "Digestive Aid, Antispasmodic, Flavoring, Ayurvedic Medicine" }
+          ]
+        },
+        {
+          "name": "Mace Oleoresin",
+          "price": "₹6,800",
+          "unit": "/Kg",
+          "image": "/mace-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Myristica fragrans" },
+            { "label": "Active Ingredient", "value": "Myristicin (~4–10%), Elemicin (~5–8%)" },
+            { "label": "Primary Application", "value": "Flavoring, Perfumery, Digestive Aid, Pharmaceutical Use" }
+          ]
+        },
+        {
+          "name": "Nutmeg Oleoresin",
+          "price": "₹5,600",
+          "unit": "/Kg",
+          "image": "/nutmeg-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Myristica fragrans" },
+            { "label": "Active Ingredient", "value": "Myristicin (~5–15%), Elemicin (~5–10%)" },
+            { "label": "Primary Application", "value": "Flavoring, Aromatherapy, Digestive Aid, Pharmaceutical Formulations" }
+          ]
+        },
+        {
+          "name": "Onion Oleoresin",
+          "price": "₹3,400",
+          "unit": "/Kg",
+          "image": "/onion-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Allium cepa" },
+            { "label": "Active Ingredient", "value": "Dipropyl disulfide (~15–25%)" },
+            { "label": "Primary Application", "value": "Flavoring, Antimicrobial, Food Processing, Nutraceuticals" }
+          ]
+        },
+        {
+          "name": "Paprika Oleoresin",
+          "price": "₹4,600",
+          "unit": "/Kg",
+          "image": "/paprika-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Capsicum annuum" },
+            { "label": "Active Ingredient", "value": "Capsaicin (~3–6%), Capsanthin (~50–60%)" },
+            { "label": "Primary Application", "value": "Natural Coloring, Flavoring, Antioxidant, Food Industry" }
+          ]
+        },
+        {
+          "name": "Turmeric Oleoresin",
+          "price": "₹2,200",
+          "unit": "/Kg",
+          "image": "/turmeric-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Curcuma longa" },
+            { "label": "Active Ingredient", "value": "Curcuminoids (~10–20%), Turmerones (~30–40%)" },
+            { "label": "Primary Application", "value": "Natural Coloring, Anti-inflammatory, Food & Beverage" }
+          ]
+        },
+        {
+          "name": "White Pepper Oleoresin",
+          "price": "₹4,800",
+          "unit": "/Kg",
+          "image": "/white-pepper-oleoresin-bottle.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Piper nigrum" },
+            { "label": "Active Ingredient", "value": "Piperine (~70–80%)" },
+            { "label": "Primary Application", "value": "Flavoring, Digestive Aid, Food Preservation, Pharmaceutical" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fruit Juice Powders",
+      "products": [
+        {
+          "name": "Amla Juice Powder",
+          "price": "₹600",
+          "unit": "/Kg",
+          "image": "/amla-juice-powder-green.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Emblica officinalis" },
+            { "label": "Active Ingredient", "value": "Tannins, Vitamin C" },
+            { "label": "Primary Application", "value": "Rejuvenation, Skin & Hair Care" }
+          ]
+        },
+        {
+          "name": "Apple Juice Powder",
+          "price": "₹800",
+          "unit": "/Kg",
+          "image": "/apple-juice-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Malus domestica" },
+            { "label": "Active Ingredient", "value": "Natural Sugars, Polyphenols" },
+            { "label": "Primary Application", "value": "Antioxidant, Energy Support, Flavoring" }
+          ]
+        },
+        {
+          "name": "Banana Pulp/Powder",
+          "price": "₹500",
+          "unit": "/Kg",
+          "image": "/banana-pulp-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Musa paradisiaca" },
+            { "label": "Active Ingredient", "value": "Potassium, Natural Sugars" },
+            { "label": "Primary Application", "value": "Energy, Digestion, Smoothie Additive" }
+          ]
+        },
+        {
+          "name": "Beet Root Juice Powder",
+          "price": "₹800",
+          "unit": "/Kg",
+          "image": "/beetroot-juice-powder-red.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Beta vulgaris" },
+            { "label": "Active Ingredient", "value": "Betanin, Nitrates" },
+            { "label": "Primary Application", "value": "Cardiovascular Health, Energy, Coloring" }
+          ]
+        },
+        {
+          "name": "Coconut Water Powder",
+          "price": "₹1,200",
+          "unit": "/Kg",
+          "image": "/coconut-water-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Cocos nucifera" },
+            { "label": "Active Ingredient", "value": "Electrolytes, Potassium" },
+            { "label": "Primary Application", "value": "Hydration, Sports Nutrition" }
+          ]
+        },
+        {
+          "name": "Custard Apple Powder",
+          "price": "₹1,800",
+          "unit": "/Kg",
+          "image": "/custard-apple-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Annona reticulata" },
+            { "label": "Active Ingredient", "value": "Natural Sugars, Vitamins" },
+            { "label": "Primary Application", "value": "Energy, Nutraceutical Formulations" }
+          ]
+        },
+        {
+          "name": "Date Fruit Powder",
+          "price": "₹1,400",
+          "unit": "/Kg",
+          "image": "/date-fruit-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Phoenix dactylifera" },
+            { "label": "Active Ingredient", "value": "Glucose, Fiber, Polyphenols" },
+            { "label": "Primary Application", "value": "Energy Support, Digestive Health" }
+          ]
+        },
+        {
+          "name": "Guava Powder",
+          "price": "₹900",
+          "unit": "/Kg",
+          "image": "/guava-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Psidium guajava" },
+            { "label": "Active Ingredient", "value": "Vitamin C, Fiber" },
+            { "label": "Primary Application", "value": "Immunity, Gut Health" }
+          ]
+        },
+        {
+          "name": "Jamun Powder",
+          "price": "₹1,200",
+          "unit": "/Kg",
+          "image": "/jamun-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Syzygium cumini" },
+            { "label": "Active Ingredient", "value": "Anthocyanins, Jamboline" },
+            { "label": "Primary Application", "value": "Blood Sugar Management, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Kiwi Powder",
+          "price": "₹2,200",
+          "unit": "/Kg",
+          "image": "/kiwi-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Actinidia deliciosa" },
+            { "label": "Active Ingredient", "value": "Actinidin, Vitamin C" },
+            { "label": "Primary Application", "value": "Skin Care, Immunity Support" }
+          ]
+        },
+        {
+          "name": "Lemon Juice/Powder",
+          "price": "₹700",
+          "unit": "/Kg",
+          "image": "/lemon-juice-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Citrus limon" },
+            { "label": "Active Ingredient", "value": "Citric Acid, Ascorbic Acid" },
+            { "label": "Primary Application", "value": "Digestive Support, Immunity, Detox" }
+          ]
+        },
+        {
+          "name": "Litchi Powder",
+          "price": "₹1,600",
+          "unit": "/Kg",
+          "image": "/litchi-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Litchi chinensis" },
+            { "label": "Active Ingredient", "value": "Vitamin C, Oligonol" },
+            { "label": "Primary Application", "value": "Anti-aging, Energy, Flavoring" }
+          ]
+        },
+        {
+          "name": "Mango Juice/Powder",
+          "price": "₹900",
+          "unit": "/Kg",
+          "image": "/mango-juice-powder-yellow.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Mangifera indica" },
+            { "label": "Active Ingredient", "value": "Carotenoids, Vitamin C" },
+            { "label": "Primary Application", "value": "Immune Health, Skin Rejuvenation, Flavoring" }
+          ]
+        },
+        {
+          "name": "Orange Juice/Powder",
+          "price": "₹700",
+          "unit": "/Kg",
+          "image": "/orange-juice-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Citrus sinensis" },
+            { "label": "Active Ingredient", "value": "Vitamin C, Flavonoids" },
+            { "label": "Primary Application", "value": "Immunity Support, Antioxidant, Flavoring" }
+          ]
+        },
+        {
+          "name": "Papaya Powder",
+          "price": "₹1,100",
+          "unit": "/Kg",
+          "image": "/papaya-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Carica papaya" },
+            { "label": "Active Ingredient", "value": "Papain, Beta-Carotene" },
+            { "label": "Primary Application", "value": "Digestive Enzyme Support" }
+          ]
+        },
+        {
+          "name": "Peach Powder",
+          "price": "₹1,800",
+          "unit": "/Kg",
+          "image": "/peach-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Prunus persica" },
+            { "label": "Active Ingredient", "value": "Carotenoids" },
+            { "label": "Primary Application", "value": "Skin Health, Beverage Additive" }
+          ]
+        },
+        {
+          "name": "Pineapple Juice/Powder",
+          "price": "₹1,000",
+          "unit": "/Kg",
+          "image": "/pineapple-juice-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Ananas comosus" },
+            { "label": "Active Ingredient", "value": "Bromelain, Vitamin C" },
+            { "label": "Primary Application", "value": "Digestive Aid, Anti-inflammatory, Flavoring" }
+          ]
+        },
+        {
+          "name": "Pomegranate Juice/Powder",
+          "price": "₹1,200",
+          "unit": "/Kg",
+          "image": "/pomegranate-juice-powder-red.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Punica granatum" },
+            { "label": "Active Ingredient", "value": "Ellagic Acid, Polyphenols" },
+            { "label": "Primary Application", "value": "Antioxidant, Heart & Cardiovascular Support" }
+          ]
+        },
+        {
+          "name": "Sapota (Chikoo) Powder",
+          "price": "₹1,400",
+          "unit": "/Kg",
+          "image": "/sapota-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Manilkara zapota" },
+            { "label": "Active Ingredient", "value": "Polyphenols, Sugars" },
+            { "label": "Primary Application", "value": "Energy, Flavoring, Smoothie Base" }
+          ]
+        },
+        {
+          "name": "Strawberry Juice/Powder",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/strawberry-juice-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fragaria × ananassa" },
+            { "label": "Active Ingredient", "value": "Anthocyanins, Vitamin C" },
+            { "label": "Primary Application", "value": "Skin Health, Antioxidant, Natural Coloring" }
+          ]
+        },
+        {
+          "name": "Tamarind Pulp Powder",
+          "price": "₹600",
+          "unit": "/Kg",
+          "image": "/tamarind-pulp-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Tamarindus indica" },
+            { "label": "Active Ingredient", "value": "Tartaric Acid, Polyphenols" },
+            { "label": "Primary Application", "value": "Digestive Aid, Flavoring" }
+          ]
+        },
+        {
+          "name": "Watermelon Juice/Powder",
+          "price": "₹800",
+          "unit": "/Kg",
+          "image": "/watermelon-juice-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Citrullus lanatus" },
+            { "label": "Active Ingredient", "value": "Lycopene, Citrulline" },
+            { "label": "Primary Application", "value": "Hydration, Antioxidant, Skin Health" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Phytochemicals",
+      "products": [
+        {
+          "name": "5-Hydroxytryptophan (5-HTP)",
+          "price": "₹8,500",
+          "unit": "/Kg",
+          "image": "/5-htp-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Griffonia simplicifolia" },
+            { "label": "Active Ingredient", "value": "5-HTP" },
+            { "label": "Primary Application", "value": "Mood Support, Sleep Aid" }
+          ]
+        },
+        {
+          "name": "Berberine HCL",
+          "price": "₹6,500",
+          "unit": "/Kg",
+          "image": "/berberine-hcl-powder.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Berberis aristata" },
+            { "label": "Active Ingredient", "value": "Berberine" },
+            { "label": "Primary Application", "value": "Blood Sugar & Lipid Regulation" }
+          ]
+        },
+        {
+          "name": "Beta Aescin",
+          "price": "₹12,000",
+          "unit": "/Kg",
+          "image": "/beta-aescin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Aesculus hippocastanum" },
+            { "label": "Active Ingredient", "value": "Aescin" },
+            { "label": "Primary Application", "value": "Venous Support, Anti-inflammatory" }
+          ]
+        },
+        {
+          "name": "Colchicine",
+          "price": "₹15,000",
+          "unit": "/Kg",
+          "image": "/colchicine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Gloriosa superba" },
+            { "label": "Active Ingredient", "value": "Colchicine" },
+            { "label": "Primary Application", "value": "Anti-Gout, Anti-Inflammatory" }
+          ]
+        },
+        {
+          "name": "Curcumin",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/curcumin-powder-yellow.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Curcuma longa" },
+            { "label": "Active Ingredient", "value": "Curcuminoids" },
+            { "label": "Primary Application", "value": "Antioxidant, Anti-inflammatory" }
+          ]
+        },
+        {
+          "name": "Forskolin",
+          "price": "₹18,000",
+          "unit": "/Kg",
+          "image": "/forskolin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Coleus forskohlii" },
+            { "label": "Active Ingredient", "value": "Forskolin" },
+            { "label": "Primary Application", "value": "Weight Management, Cardiovascular Health" }
+          ]
+        },
+        {
+          "name": "Natural Caffeine",
+          "price": "₹3,500",
+          "unit": "/Kg",
+          "image": "/natural-caffeine-powder.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Coffea robusta / Camellia sinensis" },
+            { "label": "Active Ingredient", "value": "Caffeine" },
+            { "label": "Primary Application", "value": "Energy, Alertness, Thermogenic" }
+          ]
+        },
+        {
+          "name": "Piperine",
+          "price": "₹5,200",
+          "unit": "/Kg",
+          "image": "/piperine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Piper nigrum" },
+            { "label": "Active Ingredient", "value": "Piperine" },
+            { "label": "Primary Application", "value": "Bioavailability Enhancer, Thermogenic" }
+          ]
+        },
+        {
+          "name": "Quercetin Dihydrate",
+          "price": "₹8,500",
+          "unit": "/Kg",
+          "image": "/quercetin-powder-yellow.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Sophora japonica" },
+            { "label": "Active Ingredient", "value": "Quercetin" },
+            { "label": "Primary Application", "value": "Antioxidant, Allergy Relief" }
+          ]
+        },
+        {
+          "name": "Resveratrol",
+          "price": "₹12,000",
+          "unit": "/Kg",
+          "image": "/resveratrol-powder-white.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Vitis vinifera" },
+            { "label": "Active Ingredient", "value": "Resveratrol" },
+            { "label": "Primary Application", "value": "Anti-aging, Cardiovascular Support" }
+          ]
+        },
+        {
+          "name": "Rutin",
+          "price": "₹4,800",
+          "unit": "/Kg",
+          "image": "/rutin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Sophora japonica" },
+            { "label": "Active Ingredient", "value": "Rutin" },
+            { "label": "Primary Application", "value": "Capillary Strength, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Thiocolchicoside",
+          "price": "₹16,000",
+          "unit": "/Kg",
+          "image": "/thiocolchicoside-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Gloriosa superba" },
+            { "label": "Active Ingredient", "value": "Thiocolchicoside" },
+            { "label": "Primary Application", "value": "Muscle Relaxant" }
+          ]
+        },
+        {
+          "name": "Vinpocetine",
+          "price": "₹14,000",
+          "unit": "/Kg",
+          "image": "/vinpocetine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Voacanga africana" },
+            { "label": "Active Ingredient", "value": "Vinpocetine" },
+            { "label": "Primary Application", "value": "Cognitive Support, Neuroprotection" }
+          ]
+        },
+        {
+          "name": "Yohimbine HCL",
+          "price": "₹22,000",
+          "unit": "/Kg",
+          "image": "/yohimbine-hcl-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Pausinystalia yohimbe" },
+            { "label": "Active Ingredient", "value": "Yohimbine" },
+            { "label": "Primary Application", "value": "Libido Support, Fat Loss Aid" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Amino Acids",
+      "products": [
+        {
+          "name": "Acetyl L-Carnitine HCL",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/acetyl-l-carnitine-hcl-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Acetyl L-Carnitine" },
+            { "label": "Primary Application", "value": "Cognitive Support, Fat Metabolism" }
+          ]
+        },
+        {
+          "name": "Acetyl L-Tyrosine",
+          "price": "₹3,800",
+          "unit": "/Kg",
+          "image": "/acetyl-l-tyrosine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Acetyl L-Tyrosine" },
+            { "label": "Primary Application", "value": "Mental Focus, Stress Adaptation" }
+          ]
+        },
+        {
+          "name": "BCAA Blend / Instant",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/bcaa-powder-white.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "Leucine, Isoleucine, Valine" },
+            { "label": "Primary Application", "value": "Muscle Recovery, Endurance" }
+          ]
+        },
+        {
+          "name": "Beta Alanine",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/beta-alanine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Beta Alanine" },
+            { "label": "Primary Application", "value": "Muscle Carnosine Booster, Performance" }
+          ]
+        },
+        {
+          "name": "Creatine Monohydrate",
+          "price": "₹1,800",
+          "unit": "/Kg",
+          "image": "/creatine-powder-white.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Creatine" },
+            { "label": "Primary Application", "value": "Strength, Muscle Volume" }
+          ]
+        },
+        {
+          "name": "L-Carnosine",
+          "price": "₹6,800",
+          "unit": "/Kg",
+          "image": "/l-carnosine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Beta-alanine + L-histidine" },
+            { "label": "Active Ingredient", "value": "Carnosine" },
+            { "label": "Primary Application", "value": "Anti-aging, Muscle & Brain Health" }
+          ]
+        },
+        {
+          "name": "L-Cysteine Base / HCL",
+          "price": "₹3,600",
+          "unit": "/Kg",
+          "image": "/l-cysteine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Cysteine" },
+            { "label": "Primary Application", "value": "Antioxidant, Skin & Hair Health" }
+          ]
+        },
+        {
+          "name": "L-Cystine",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/l-cystine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Cystine" },
+            { "label": "Primary Application", "value": "Protein Synthesis, Detoxification" }
+          ]
+        },
+        {
+          "name": "L-Glutamic Acid",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/l-glutamic-acid-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Glutamic Acid" },
+            { "label": "Primary Application", "value": "Neurotransmitter Support" }
+          ]
+        },
+        {
+          "name": "L-Theanine",
+          "price": "₹8,500",
+          "unit": "/Kg",
+          "image": "/l-theanine-powder-white.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Camellia sinensis" },
+            { "label": "Active Ingredient", "value": "L-Theanine" },
+            { "label": "Primary Application", "value": "Relaxation, Cognitive Clarity" }
+          ]
+        },
+        {
+          "name": "L-Threonine",
+          "price": "₹3,400",
+          "unit": "/Kg",
+          "image": "/l-threonine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Threonine" },
+            { "label": "Primary Application", "value": "Protein Synthesis, Gut Health" }
+          ]
+        },
+        {
+          "name": "L-Tryptophan",
+          "price": "₹5,600",
+          "unit": "/Kg",
+          "image": "/l-tryptophan-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Tryptophan" },
+            { "label": "Primary Application", "value": "Serotonin Precursor, Sleep Support" }
+          ]
+        },
+        {
+          "name": "L-Tyrosine",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/l-tyrosine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Tyrosine" },
+            { "label": "Primary Application", "value": "Dopamine Precursor, Mood Balance" }
+          ]
+        },
+        {
+          "name": "L-Valine",
+          "price": "₹3,600",
+          "unit": "/Kg",
+          "image": "/l-valine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Valine" },
+            { "label": "Primary Application", "value": "Muscle Repair, Energy" }
+          ]
+        },
+        {
+          "name": "L-Arginine HCL / AKG",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/l-arginine-powder-white.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Arginine" },
+            { "label": "Primary Application", "value": "Nitric Oxide Booster, Circulation" }
+          ]
+        },
+        {
+          "name": "L-Arginine L-Aspartate",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/l-arginine-aspartate-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "Arginine + Aspartic Acid" },
+            { "label": "Primary Application", "value": "Endurance, Detoxification" }
+          ]
+        },
+        {
+          "name": "L-Leucine",
+          "price": "₹3,800",
+          "unit": "/Kg",
+          "image": "/l-leucine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Leucine" },
+            { "label": "Primary Application", "value": "Muscle Protein Synthesis" }
+          ]
+        },
+        {
+          "name": "L-Lysine (Mono / Acetate / Aspartate)",
+          "price": "₹2,600",
+          "unit": "/Kg",
+          "image": "/l-lysine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Lysine" },
+            { "label": "Primary Application", "value": "Collagen Support, Immunity" }
+          ]
+        },
+        {
+          "name": "L-Malic Acid",
+          "price": "₹2,200",
+          "unit": "/Kg",
+          "image": "/l-malic-acid-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Natural Source" },
+            { "label": "Active Ingredient", "value": "Malic Acid" },
+            { "label": "Primary Application", "value": "Energy Production, Detoxification" }
+          ]
+        },
+        {
+          "name": "L-Methionine / DL-Methionine",
+          "price": "₹4,400",
+          "unit": "/Kg",
+          "image": "/l-methionine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation / Synthetic" },
+            { "label": "Active Ingredient", "value": "Methionine" },
+            { "label": "Primary Application", "value": "Liver Health, Antioxidant" }
+          ]
+        },
+        {
+          "name": "L-Methyl Folate Calcium",
+          "price": "₹12,000",
+          "unit": "/Kg",
+          "image": "/l-methyl-folate-calcium-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "L-5-MTHF" },
+            { "label": "Primary Application", "value": "Methylation, Mood & Neural Support" }
+          ]
+        },
+        {
+          "name": "L-Ornithine (HCL / Aspartate)",
+          "price": "₹3,600",
+          "unit": "/Kg",
+          "image": "/l-ornithine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Ornithine" },
+            { "label": "Primary Application", "value": "Detoxification, Liver Health" }
+          ]
+        },
+        {
+          "name": "L-Phenylalanine",
+          "price": "₹3,800",
+          "unit": "/Kg",
+          "image": "/l-phenylalanine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Phenylalanine" },
+            { "label": "Primary Application", "value": "Mood Support, Neurotransmitter Precursor" }
+          ]
+        },
+        {
+          "name": "L-Proline",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/l-proline-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Proline" },
+            { "label": "Primary Application", "value": "Collagen Formation, Skin Health" }
+          ]
+        },
+        {
+          "name": "L-Serine",
+          "price": "₹4,600",
+          "unit": "/Kg",
+          "image": "/l-serine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "L-Serine" },
+            { "label": "Primary Application", "value": "Brain Function, Immune Support" }
+          ]
+        },
+        {
+          "name": "L-Taurine",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/l-taurine-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Taurine" },
+            { "label": "Primary Application", "value": "Cardiovascular & Eye Health" }
+          ]
+        },
+        {
+          "name": "L-Citrulline DL-Malate",
+          "price": "₹4,800",
+          "unit": "/Kg",
+          "image": "/l-citrulline-malate-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "Citrulline + Malic Acid" },
+            { "label": "Primary Application", "value": "Endurance, Muscle Recovery" }
+          ]
+        },
+        {
+          "name": "L-Glutathione Reduced",
+          "price": "₹15,000",
+          "unit": "/Kg",
+          "image": "/glutathione-powder-white.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "Glutathione" },
+            { "label": "Primary Application", "value": "Antioxidant, Detox" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nutraceuticals",
+      "products": [
+        {
+          "name": "Alpha Lipoic Acid",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/alpha-lipoic-acid-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Alpha Lipoic Acid" },
+            { "label": "Primary Application", "value": "Antioxidant, Nerve Health" }
+          ]
+        },
+        {
+          "name": "Arbutin",
+          "price": "₹8,500",
+          "unit": "/Kg",
+          "image": "/arbutin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Bearberry (Arctostaphylos uva-ursi)" },
+            { "label": "Active Ingredient", "value": "Arbutin" },
+            { "label": "Primary Application", "value": "Skin Brightening, Pigmentation Control" }
+          ]
+        },
+        {
+          "name": "Astaxanthin 10%",
+          "price": "₹15,000",
+          "unit": "/Kg",
+          "image": "/astaxanthin-powder-red.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Haematococcus pluvialis" },
+            { "label": "Active Ingredient", "value": "Astaxanthin" },
+            { "label": "Primary Application", "value": "Eye Health, Anti-aging" }
+          ]
+        },
+        {
+          "name": "Barley Grass Powder",
+          "price": "₹1,800",
+          "unit": "/Kg",
+          "image": "/barley-grass-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Hordeum vulgare" },
+            { "label": "Active Ingredient", "value": "Chlorophyll, Vitamins" },
+            { "label": "Primary Application", "value": "Detoxification, Alkalizing Agent" }
+          ]
+        },
+        {
+          "name": "Beta Carotene (10% / 30%)",
+          "price": "₹6,200",
+          "unit": "/Kg",
+          "image": "/beta-carotene-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Daucus carota / Dunaliella salina" },
+            { "label": "Active Ingredient", "value": "Beta Carotene" },
+            { "label": "Primary Application", "value": "Eye Health, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Bovine Colostrum",
+          "price": "₹12,000",
+          "unit": "/Kg",
+          "image": "/bovine-colostrum-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Bovine Milk" },
+            { "label": "Active Ingredient", "value": "Immunoglobulins, Growth Factors" },
+            { "label": "Primary Application", "value": "Immunity, Gut Health" }
+          ]
+        },
+        {
+          "name": "Calcitriol",
+          "price": "₹18,000",
+          "unit": "/Kg",
+          "image": "/calcitriol-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Active Vitamin D3" },
+            { "label": "Primary Application", "value": "Bone Health, Calcium Absorption" }
+          ]
+        },
+        {
+          "name": "Coenzyme Q10 (Ubiquinone)",
+          "price": "₹8,500",
+          "unit": "/Kg",
+          "image": "/coenzyme-q10-powder.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "CoQ10" },
+            { "label": "Primary Application", "value": "Heart Health, Energy Production" }
+          ]
+        },
+        {
+          "name": "Collagen Peptide (Bovine)",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/bovine-collagen-peptide-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Bovine Source" },
+            { "label": "Active Ingredient", "value": "Type I & III Collagen" },
+            { "label": "Primary Application", "value": "Skin, Joint & Hair Health" }
+          ]
+        },
+        {
+          "name": "Collagen Peptide (Marine)",
+          "price": "₹6,800",
+          "unit": "/Kg",
+          "image": "/marine-collagen-peptide-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Marine Source" },
+            { "label": "Active Ingredient", "value": "Type I Collagen" },
+            { "label": "Primary Application", "value": "Skin Elasticity, Anti-aging" }
+          ]
+        },
+        {
+          "name": "Conjugated Linoleic Acid",
+          "price": "₹5,600",
+          "unit": "/Kg",
+          "image": "/cla-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Safflower Oil" },
+            { "label": "Active Ingredient", "value": "CLA" },
+            { "label": "Primary Application", "value": "Fat Metabolism, Weight Management" }
+          ]
+        },
+        {
+          "name": "D-Biotin",
+          "price": "₹12,000",
+          "unit": "/Kg",
+          "image": "/d-biotin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Biotin" },
+            { "label": "Primary Application", "value": "Hair, Skin & Nail Health" }
+          ]
+        },
+        {
+          "name": "D-Chiro Inositol",
+          "price": "₹14,000",
+          "unit": "/Kg",
+          "image": "/d-chiro-inositol-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "DCI" },
+            { "label": "Primary Application", "value": "PCOS Support, Insulin Sensitivity" }
+          ]
+        },
+        {
+          "name": "DHA Veg (10% / 40%)",
+          "price": "₹8,500",
+          "unit": "/Kg",
+          "image": "/dha-veg-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Algal Source" },
+            { "label": "Active Ingredient", "value": "Docosahexaenoic Acid" },
+            { "label": "Primary Application", "value": "Brain & Eye Development" }
+          ]
+        },
+        {
+          "name": "Folic Acid",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/folic-acid-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Vitamin B9" },
+            { "label": "Primary Application", "value": "Prenatal Health, Cell Division" }
+          ]
+        },
+        {
+          "name": "Glutathione Reduced",
+          "price": "₹15,000",
+          "unit": "/Kg",
+          "image": "/glutathione-powder-white.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "Glutathione" },
+            { "label": "Primary Application", "value": "Antioxidant, Skin Brightening" }
+          ]
+        },
+        {
+          "name": "Grape Seed Extract",
+          "price": "₹3,600",
+          "unit": "/Kg",
+          "image": "/grape-seed-extract-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Vitis vinifera" },
+            { "label": "Active Ingredient", "value": "Proanthocyanidins" },
+            { "label": "Primary Application", "value": "Antioxidant, Cardiovascular Support" }
+          ]
+        },
+        {
+          "name": "Inositol",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/inositol-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Inositol" },
+            { "label": "Primary Application", "value": "Mood Balance, Hormonal Health" }
+          ]
+        },
+        {
+          "name": "Lutein (10% / 20% / 40%)",
+          "price": "₹6,500",
+          "unit": "/Kg",
+          "image": "/lutein-powder-orange.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Tagetes erecta" },
+            { "label": "Active Ingredient", "value": "Lutein" },
+            { "label": "Primary Application", "value": "Eye Health, Blue Light Protection" }
+          ]
+        },
+        {
+          "name": "Lycopene (10% Powder / Liquid)",
+          "price": "₹4,200",
+          "unit": "/Kg",
+          "image": "/lycopene-powder-red.png",
+          "popular": true,
+          "specs": [
+            { "label": "Botanical Name", "value": "Solanum lycopersicum" },
+            { "label": "Active Ingredient", "value": "Lycopene" },
+            { "label": "Primary Application", "value": "Prostate Health, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Marine Collagen",
+          "price": "₹7,200",
+          "unit": "/Kg",
+          "image": "/marine-collagen-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fish Source" },
+            { "label": "Active Ingredient", "value": "Type I Collagen" },
+            { "label": "Primary Application", "value": "Skin, Hair & Joint Support" }
+          ]
+        },
+        {
+          "name": "Methyl Folate Calcium",
+          "price": "₹12,000",
+          "unit": "/Kg",
+          "image": "/methyl-folate-calcium-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "L-5-MTHF" },
+            { "label": "Primary Application", "value": "Methylation, Mood & Neural Support" }
+          ]
+        },
+        {
+          "name": "Methyl Sulfonyl Methane (MSM)",
+          "price": "₹2,200",
+          "unit": "/Kg",
+          "image": "/msm-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "MSM" },
+            { "label": "Primary Application", "value": "Joint Health, Anti-inflammatory" }
+          ]
+        },
+        {
+          "name": "Myo-Inositol",
+          "price": "₹3,600",
+          "unit": "/Kg",
+          "image": "/myo-inositol-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "Myo-Inositol" },
+            { "label": "Primary Application", "value": "Fertility, PCOS Support" }
+          ]
+        },
+        {
+          "name": "Nano Curcumin",
+          "price": "₹5,800",
+          "unit": "/Kg",
+          "image": "/nano-curcumin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Curcuma longa" },
+            { "label": "Active Ingredient", "value": "Curcuminoids (Nanoform)" },
+            { "label": "Primary Application", "value": "Enhanced Bioavailability, Inflammation Support" }
+          ]
+        },
+        {
+          "name": "Omega-3 Fatty Acids (EPA/DHA)",
+          "price": "₹6,800",
+          "unit": "/Kg",
+          "image": "/omega-3-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fish / Algal Source" },
+            { "label": "Active Ingredient", "value": "EPA:DHA (various ratios)" },
+            { "label": "Primary Application", "value": "Heart, Brain & Joint Health" }
+          ]
+        },
+        {
+          "name": "Pancreatin",
+          "price": "₹8,500",
+          "unit": "/Kg",
+          "image": "/pancreatin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Porcine Source" },
+            { "label": "Active Ingredient", "value": "Digestive Enzymes" },
+            { "label": "Primary Application", "value": "Digestive Support" }
+          ]
+        },
+        {
+          "name": "Pea Protein",
+          "price": "₹2,800",
+          "unit": "/Kg",
+          "image": "/pea-protein-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Pisum sativum" },
+            { "label": "Active Ingredient", "value": "Plant Protein" },
+            { "label": "Primary Application", "value": "Muscle Growth, Vegan Nutrition" }
+          ]
+        },
+        {
+          "name": "Phytosterols",
+          "price": "₹4,600",
+          "unit": "/Kg",
+          "image": "/phytosterols-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Plant Oils" },
+            { "label": "Active Ingredient", "value": "Beta-Sitosterol & Others" },
+            { "label": "Primary Application", "value": "Cholesterol Management" }
+          ]
+        },
+        {
+          "name": "Raspberry Ketones 98%",
+          "price": "₹18,000",
+          "unit": "/Kg",
+          "image": "/raspberry-ketones-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Rubus idaeus" },
+            { "label": "Active Ingredient", "value": "Raspberry Ketone" },
+            { "label": "Primary Application", "value": "Weight Management, Metabolism Booster" }
+          ]
+        },
+        {
+          "name": "Resveratrol (50% / 98%)",
+          "price": "₹12,000",
+          "unit": "/Kg",
+          "image": "/resveratrol-powder-white.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Polygonum cuspidatum / Vitis vinifera" },
+            { "label": "Active Ingredient", "value": "Resveratrol" },
+            { "label": "Primary Application", "value": "Anti-aging, Cardiovascular Support" }
+          ]
+        },
+        {
+          "name": "S-Adenosyl L-Methionine (SAMe)",
+          "price": "₹16,000",
+          "unit": "/Kg",
+          "image": "/same-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Synthetic" },
+            { "label": "Active Ingredient", "value": "SAMe" },
+            { "label": "Primary Application", "value": "Mood Support, Liver Health" }
+          ]
+        },
+        {
+          "name": "Sodium Hyaluronate",
+          "price": "₹14,000",
+          "unit": "/Kg",
+          "image": "/sodium-hyaluronate-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "Hyaluronic Acid" },
+            { "label": "Primary Application", "value": "Joint Lubrication, Skin Hydration" }
+          ]
+        },
+        {
+          "name": "Soya Lecithin Powder",
+          "price": "₹2,400",
+          "unit": "/Kg",
+          "image": "/soya-lecithin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Glycine max" },
+            { "label": "Active Ingredient", "value": "Phospholipids" },
+            { "label": "Primary Application", "value": "Brain Health, Emulsifier" }
+          ]
+        },
+        {
+          "name": "Spirulina Powder",
+          "price": "₹2,200",
+          "unit": "/Kg",
+          "image": "/spirulina-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Arthrospira platensis" },
+            { "label": "Active Ingredient", "value": "Phycocyanin, Protein" },
+            { "label": "Primary Application", "value": "Detox, Energy, Antioxidant" }
+          ]
+        },
+        {
+          "name": "Tetrahydrocurcumin",
+          "price": "₹6,800",
+          "unit": "/Kg",
+          "image": "/tetrahydrocurcumin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Curcuma longa" },
+            { "label": "Active Ingredient", "value": "Tetrahydrocurcumin" },
+            { "label": "Primary Application", "value": "Skin Brightening, Anti-inflammatory" }
+          ]
+        },
+        {
+          "name": "Ubiquinol Acetate",
+          "price": "₹18,000",
+          "unit": "/Kg",
+          "image": "/ubiquinol-acetate-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Fermentation" },
+            { "label": "Active Ingredient", "value": "Ubiquinol" },
+            { "label": "Primary Application", "value": "Antioxidant, Cellular Energy" }
+          ]
+        },
+        {
+          "name": "Wheat Grass Powder",
+          "price": "₹1,600",
+          "unit": "/Kg",
+          "image": "/wheat-grass-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Triticum aestivum" },
+            { "label": "Active Ingredient", "value": "Chlorophyll, Vitamins" },
+            { "label": "Primary Application", "value": "Detox, Alkalizing, Energy" }
+          ]
+        },
+        {
+          "name": "Whey Protein (80% / 90%)",
+          "price": "₹3,200",
+          "unit": "/Kg",
+          "image": "/whey-protein-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Dairy Source" },
+            { "label": "Active Ingredient", "value": "Whey Protein Concentrate/Isolate" },
+            { "label": "Primary Application", "value": "Muscle Building, Recovery" }
+          ]
+        },
+        {
+          "name": "Zeaxanthin 5%",
+          "price": "₹8,500",
+          "unit": "/Kg",
+          "image": "/zeaxanthin-powder.png",
+          "specs": [
+            { "label": "Botanical Name", "value": "Tagetes erecta" },
+            { "label": "Active Ingredient", "value": "Zeaxanthin" },
+            { "label": "Primary Application", "value": "Eye Health, Macular Health" }
+          ]
+        }
+      ]
+    }
+  ]
+}

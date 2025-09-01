@@ -1,38 +1,220 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useEffect, useId, useMemo, useRef, useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
+import productData from "@/lib/products-data.json"
+
+type Product = {
+  name: string
+  image: string
+  popular?: boolean
+}
+
+type Category = {
+  title: string
+  products: Product[]
+}
+
+type ProductData = {
+  categories: Category[]
+}
+
+const slugify = (title: string) =>
+  title
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
 
 const Navbar: React.FC = () => {
-  const [searchValue, setSearchValue] = useState("")
-  const [showSearchSuggest, setShowSearchSuggest] = useState(false)
+  const data = productData as unknown as ProductData
+  const router = useRouter()
 
-  const handleSearchSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (searchValue.trim() === "") {
-      alert("Please enter a search term")
-      return false
+  const [query, setQuery] = useState("")
+  const [open, setOpen] = useState(false)
+  const [activeIndex, setActiveIndex] = useState<number>(-1)
+
+  // Refs to manage positioning and click-outside
+  const searchWrapRef = useRef<HTMLDivElement>(null)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  // Create a flat list of products with category slug and product slug
+  const allProducts = useMemo(() => {
+    const list: Array<{
+      name: string
+      image: string
+      categoryTitle: string
+      categorySlug: string
+      productSlug: string
+    }> = []
+    data.categories.forEach((category) => {
+      const cSlug = slugify(category.title)
+      category.products.forEach((p) => {
+        list.push({
+          name: p.name,
+          image: p.image,
+          categoryTitle: category.title,
+          categorySlug: cSlug,
+          productSlug: slugify(p.name),
+        })
+      })
+    })
+    return list
+  }, [data])
+
+  // Popular picks if field empty
+  const popularProducts = useMemo(() => {
+    const popular: Array<{
+      name: string
+      image: string
+      categorySlug: string
+      productSlug: string
+    }> = []
+    data.categories.forEach((category) => {
+      const cSlug = slugify(category.title)
+      const picked = category.products
+        .filter((p) => p.popular)
+        .slice(0, 2)
+      if (picked.length < 2) {
+        picked.push(...category.products.slice(0, 2 - picked.length))
+      }
+      popular.push(
+        ...picked.map((p) => ({
+          name: p.name,
+          image: p.image,
+          categorySlug: cSlug,
+          productSlug: slugify(p.name),
+        })),
+      )
+    })
+    return popular
+  }, [data])
+
+  // Debounced query to avoid filtering on every keystroke
+  const [debouncedQuery, setDebouncedQuery] = useState("")
+  useEffect(() => {
+    const t = setTimeout(() => setDebouncedQuery(query.trim()), 150)
+    return () => clearTimeout(t)
+  }, [query])
+
+  // Filtered suggestions
+  const suggestions = useMemo(() => {
+    if (!debouncedQuery) return popularProducts
+    const q = debouncedQuery.toLowerCase()
+    return allProducts
+      .filter((p) => p.name.toLowerCase().includes(q))
+      .slice(0, 20)
+      .map((p) => ({
+        name: p.name,
+        image: p.image,
+        categorySlug: p.categorySlug,
+        productSlug: p.productSlug,
+      }))
+  }, [allProducts, popularProducts, debouncedQuery])
+
+  // Open list when focusing/clicking the input
+  const openSuggestions = () => {
+    setOpen(true)
+  }
+
+  // Close on outside click
+  useEffect(() => {
+    const onDocClick = (e: MouseEvent) => {
+      if (!searchWrapRef.current) return
+      if (!searchWrapRef.current.contains(e.target as Node)) {
+        setOpen(false)
+        setActiveIndex(-1)
+      }
     }
-    console.log("Searching for:", searchValue)
-    return true
+    document.addEventListener("mousedown", onDocClick)
+    return () => document.removeEventListener("mousedown", onDocClick)
+  }, [])
+
+  // Unique ids for aria-controls and options
+  const listboxId = `listbox-${useId()}`
+  const optionId = (i: number) => `option-${listboxId}-${i}`
+
+  const navigateTo = (categorySlug: string, productSlug: string) => {
+    router.push(`/categories/${categorySlug}?highlight=${encodeURIComponent(productSlug)}`)
+    setOpen(false)
+    setActiveIndex(-1)
   }
 
-  const handleSearchClear = () => {
-    setSearchValue("")
-    setShowSearchSuggest(false)
+  const onSubmit: React.FormEventHandler = (e) => {
+    e.preventDefault()
+    const term = query.trim()
+    if (!term) {
+      // Prefer focusing the input instead of alert
+      inputRef.current?.focus()
+      return
+    }
+    // Best-effort: find first match; otherwise keep list open for selection
+    const match = allProducts.find((p) =>
+      p.name.toLowerCase().includes(term.toLowerCase()),
+    )
+    if (match) {
+      navigateTo(match.categorySlug, match.productSlug)
+    } else {
+      setOpen(true)
+      setActiveIndex(suggestions.length ? 0 : -1)
+    }
   }
 
-  const handleSearchBlur = () => {
-    setTimeout(() => setShowSearchSuggest(false), 150)
+  const onKeyDown: React.KeyboardEventHandler<HTMLInputElement> = (e) => {
+    if (!open && (e.key === "ArrowDown" || e.key === "ArrowUp")) {
+      setOpen(true)
+      setActiveIndex(0)
+      e.preventDefault()
+      return
+    }
+    if (!open) return
+
+    if (e.key === "ArrowDown") {
+      setActiveIndex((prev) => {
+        const next = suggestions.length ? (prev + 1) % suggestions.length : -1
+        // Ensure active option is visible
+        const el = document.getElementById(optionId(next))
+        el?.scrollIntoView({ block: "nearest" })
+        return next
+      })
+      e.preventDefault()
+    } else if (e.key === "ArrowUp") {
+      setActiveIndex((prev) => {
+        const next = suggestions.length ? (prev - 1 + suggestions.length) % suggestions.length : -1
+        const el = document.getElementById(optionId(next))
+        el?.scrollIntoView({ block: "nearest" })
+        return next
+      })
+      e.preventDefault()
+    } else if (e.key === "Enter") {
+      if (activeIndex >= 0 && suggestions[activeIndex]) {
+        const s = suggestions[activeIndex]
+        navigateTo(s.categorySlug, s.productSlug)
+        e.preventDefault()
+      }
+    } else if (e.key === "Escape") {
+      setOpen(false)
+      setActiveIndex(-1)
+      e.preventDefault()
+    }
   }
 
-  const downloadBrochure = () => {
-    window.open("/Product List.pdf", "_blank")
+  // Prefetch category route on hover of an option (optional optimization)
+  const prefetchOption = (categorySlug: string, productSlug: string) => {
+    const href = `/categories/${categorySlug}?highlight=${encodeURIComponent(productSlug)}`
+    // Next.js docs recommend deliberate handling of prefetch; this is a safe-on-hover approach
+    router.prefetch?.(href)
   }
 
-  const downloadProductList = () => {
-    window.open("/Product List.pdf", "_blank")
+  const clearQuery = () => {
+    setQuery("")
+    setActiveIndex(-1)
+    setOpen(true)
+    inputRef.current?.focus()
   }
 
   return (
@@ -42,7 +224,6 @@ const Navbar: React.FC = () => {
           <div className="flex items-center justify-between py-3">
             {/* Left side - Logo and Company Info */}
             <div className="flex items-center space-x-6">
-              {/* Logo */}
               <div className="flex items-center">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-p4U2jnF8kzNoJzD7zD54avAFLygP5H.png"
@@ -50,8 +231,6 @@ const Navbar: React.FC = () => {
                   className="h-12 w-auto"
                 />
               </div>
-
-              {/* Company Info */}
               <div className="flex flex-col text-sm text-gray-600">
                 <div className="font-semibold text-gray-800">Puravida Natural</div>
                 <div className="flex items-center space-x-4">
@@ -63,7 +242,7 @@ const Navbar: React.FC = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                     169, Uttam Nagar West, New Delhi - 110059, India
+                    169, Uttam Nagar West, New Delhi - 110059, India
                   </span>
                   <span>GST No.- 07ABCFP5743NIZS</span>
                 </div>
@@ -72,8 +251,8 @@ const Navbar: React.FC = () => {
 
             {/* Right side - Contact Buttons */}
             <div className="flex items-center space-x-3">
-              {/* Call Button */}
-              <div className="flex items-center bg-orange-50 border border-orange-200 rounded-lg px-4 py-2">
+              {/* Call Button as tel link */}
+              <a href="tel:9811647596" className="flex items-center bg-orange-50 border border-orange-200 rounded-lg px-4 py-2">
                 <div className="flex items-center space-x-2">
                   <div className="bg-orange-500 rounded-full p-2">
                     <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -85,16 +264,16 @@ const Navbar: React.FC = () => {
                     <div className="text-gray-500 text-xs">89% Response rate</div>
                   </div>
                 </div>
-              </div>
+              </a>
 
               {/* Send Email Button */}
-              <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg flex items-center space-x-2 transition-colors">
+              <Link href="/contact" className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg flex items-center space-x-2 transition-colors">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <span className="font-semibold text-lg tracking-wider">Send Email</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -136,7 +315,6 @@ const Navbar: React.FC = () => {
                       </svg>
                       <span>Our Product Range</span>
                     </Link>
-
                     <div className="mega-menu absolute top-full left-0 w-screen bg-white text-gray-800 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                       <div className="container mx-auto">
                         <div className="mega-menu__row grid grid-cols-7 gap-4 p-8">
@@ -154,7 +332,6 @@ const Navbar: React.FC = () => {
                               <li><Link href="/standardized-herbal-extracts" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
-
                           <div className="mega-menu__column">
                             <Link href="/essential-oils">
                               <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">ESSENTIAL OILS</h4>
@@ -169,7 +346,6 @@ const Navbar: React.FC = () => {
                               <li><Link href="/essential-oils" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
-
                           <div className="mega-menu__column">
                             <Link href="/oleoresins">
                               <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">OLEORESINS</h4>
@@ -184,7 +360,6 @@ const Navbar: React.FC = () => {
                               <li><Link href="/oleoresins" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
-
                           <div className="mega-menu__column">
                             <Link href="/fruit-juice-powders">
                               <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">FRUIT JUICE POWDERS</h4>
@@ -198,7 +373,6 @@ const Navbar: React.FC = () => {
                               <li><Link href="/fruit-juice-powders" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
-
                           <div className="mega-menu__column">
                             <Link href="/phytochemicals">
                               <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">PHYTOCHEMICALS</h4>
@@ -213,7 +387,6 @@ const Navbar: React.FC = () => {
                               <li><Link href="/phytochemicals" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
-
                           <div className="mega-menu__column">
                             <Link href="/amino-acids">
                               <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">AMINO ACIDS</h4>
@@ -228,7 +401,6 @@ const Navbar: React.FC = () => {
                               <li><Link href="/amino-acids" className="mm_va text-xs uppercase text-orange-500 font-medium hover:text-orange-600 block py-0.5">View All</Link></li>
                             </ul>
                           </div>
-
                           <div className="mega-menu__column">
                             <Link href="/nutraceuticals">
                               <h4 className="font-bold text-green-800 mb-3 hover:text-orange-500 text-xs">NUTRACEUTICALS</h4>
@@ -244,7 +416,6 @@ const Navbar: React.FC = () => {
                             </ul>
                           </div>
                         </div>
-
                         <div className="mega-menu__row p-8 pt-0">
                           <Link
                             href="/products"
@@ -273,7 +444,6 @@ const Navbar: React.FC = () => {
                         </svg>
                       </span>
                     </Link>
-
                     <div className="mega-menu pfl_mega_menu absolute top-full left-0 bg-white text-gray-800 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 min-w-48">
                       <div className="container">
                         <div className="mega-menu__row p-4">
@@ -285,7 +455,7 @@ const Navbar: React.FC = () => {
                             </li>
                             <li className="mega-menu__column w-full">
                               <button
-                                onClick={downloadBrochure}
+                                onClick={() => window.open("/Product List.pdf", "_blank")}
                                 className="cp block hover:text-green-800 py-2 text-left w-full cursor-pointer"
                               >
                                 Download Brochure
@@ -293,7 +463,7 @@ const Navbar: React.FC = () => {
                             </li>
                             <li className="mega-menu__column w-full">
                               <button
-                                onClick={downloadProductList}
+                                onClick={() => window.open("/Product List.pdf", "_blank")}
                                 className="cp block hover:text-green-800 py-2 text-left w-full cursor-pointer"
                               >
                                 Download Product List
@@ -318,55 +488,127 @@ const Navbar: React.FC = () => {
               </nav>
             </div>
 
-            {/* Right Navigation - Search */}
+            {/* Right Navigation - Search with INCREASED WIDTH */}
             <div className="ps-navigation__right mr-10">
               <div className="ps-header__search header__search22">
-                <form onSubmit={handleSearchSubmit} id="cse-search-box" method="get" name="frm">
-                  <div className="ps-search-table">
-                    <div className="input-group flex">
+                <form onSubmit={onSubmit} method="get" name="search-form" aria-label="Site search">
+                  {/* INCREASED WIDTH: Changed from 304px to 400px */}
+                  <div ref={searchWrapRef} className="relative" style={{ width: 400 }}>
+                    <div className="flex items-stretch">
                       <input
-                        className="form-control ps-input bg-white text-gray-800 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
-                        style={{ width: "304px" }}
+                        ref={inputRef}
+                        className="form-control ps-input bg-white text-gray-800 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400 w-full rounded-l-md"
                         type="text"
                         id="ss"
                         placeholder="Search Products/Services"
-                        value={searchValue}
-                        onChange={(e) => setSearchValue(e.target.value)}
-                        onBlur={handleSearchBlur}
-                        size={5}
+                        value={query}
+                        onChange={(e) => {
+                          setQuery(e.target.value)
+                          setOpen(true)
+                          setActiveIndex(-1)
+                        }}
+                        onFocus={openSuggestions}
+                        onKeyDown={onKeyDown}
                         autoComplete="off"
-                        onMouseDown={handleSearchClear}
+                        // ARIA combobox attributes
+                        role="combobox"
+                        aria-autocomplete="list"
+                        aria-expanded={open}
+                        aria-controls={listboxId}
+                        aria-activedescendant={activeIndex >= 0 ? optionId(activeIndex) : undefined}
                       />
-                      <div className="input-group-append d-flex justify-content-center cp">
+
+                      {query && (
                         <button
-                          type="submit"
-                          className="search-btn bg-orange-500 text-white px-4 py-2 hover:bg-orange-600 transition-colors flex items-center justify-center space-x-2 cursor-pointer"
+                          type="button"
+                          onClick={clearQuery}
+                          className="px-3 bg-white text-gray-500 hover:text-gray-700 border border-r-0 border-l-0 border-gray-300"
+                          aria-label="Clear search"
+                          title="Clear"
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="14"
-                            height="15"
-                            viewBox="0 0 14 15"
-                            fill="none"
-                          >
-                            <path
-                              d="M11.0482 10.5737L14 13.5248L13.0248 14.5L10.0737 11.5482C8.9757 12.4285 7.60993 12.9072 6.20262 12.9052C2.77877 12.9052 0 10.1265 0 6.70262C0 3.27877 2.77877 0.5 6.20262 0.5C9.62646 0.5 12.4052 3.27877 12.4052 6.70262C12.4072 8.10993 11.9285 9.4757 11.0482 10.5737ZM9.66575 10.0624C10.5404 9.16291 11.0289 7.95722 11.0269 6.70262C11.0269 4.03687 8.86768 1.87836 6.20262 1.87836C3.53687 1.87836 1.37836 4.03687 1.37836 6.70262C1.37836 9.36768 3.53687 11.5269 6.20262 11.5269C7.45722 11.5289 8.66291 11.0404 9.56237 10.1657L9.66575 10.0624Z"
-                              fill="white"
-                            ></path>
-                          </svg>
-                          <span className="font-semibold text-lg tracking-wider">Search</span>
+                          ✕
                         </button>
-                      </div>
-                      <div
-                        id="SearchSuggest"
-                        className="position-absolute absolute top-full left-0 right-0 bg-white shadow-lg z-50"
-                        style={{ display: showSearchSuggest ? "block" : "none" }}
-                      ></div>
+                      )}
+
+                      <button
+                        type="submit"
+                        className="search-btn bg-orange-500 text-white px-4 py-2 hover:bg-orange-600 transition-colors flex items-center justify-center space-x-2 cursor-pointer rounded-r-md"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="15"
+                          viewBox="0 0 14 15"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.0482 10.5737L14 13.5248L13.0248 14.5L10.0737 11.5482C8.9757 12.4285 7.60993 12.9072 6.20262 12.9052C2.77877 12.9052 0 10.1265 0 6.70262C0 3.27877 2.77877 0.5 6.20262 0.5C9.62646 0.5 12.4052 3.27877 12.4052 6.70262C12.4072 8.10993 11.9285 9.4757 11.0482 10.5737ZM9.66575 10.0624C10.5404 9.16291 11.0289 7.95722 11.0269 6.70262C11.0269 4.03687 8.86768 1.87836 6.20262 1.87836C3.53687 1.87836 1.37836 4.03687 1.37836 6.70262C1.37836 9.36768 3.53687 11.5269 6.20262 11.5269C7.45722 11.5289 8.66291 11.0404 9.56237 10.1657L9.66575 10.0624Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                        <span className="font-semibold text-lg tracking-wider">Search</span>
+                      </button>
                     </div>
+
+                    {/* Live region for screen readers */}
+                    <div className="sr-only" role="status" aria-live="polite">
+                      {open ? `${suggestions.length} results available` : ""}
+                    </div>
+
+                    {/* Suggestions dropdown */}
+                    {open && (
+                      <div
+                        id={listboxId}
+                        role="listbox"
+                        className="absolute top-full left-0 w-full bg-white shadow-lg z-50 max-h-96 overflow-y-auto border border-gray-200 rounded-md mt-1"
+                      >
+                        {suggestions.length === 0 ? (
+                          <div className="px-4 py-2 text-sm text-gray-500">No results found</div>
+                        ) : (
+                          suggestions.map((s, i) => {
+                            const href = `/categories/${s.categorySlug}?highlight=${encodeURIComponent(s.productSlug)}`
+                            const isActive = i === activeIndex
+                            return (
+                              <Link
+                                key={`${s.categorySlug}-${s.productSlug}-${i}`}
+                                href={href}
+                                id={optionId(i)}
+                                role="option"
+                                aria-selected={isActive}
+                                className={`block px-4 py-2 border-b last:border-b-0 border-gray-100 ${
+                                  isActive ? "bg-gray-100" : "bg-white"
+                                }`}
+                                // Prevent input blur before click handler
+                                onMouseDown={(e) => e.preventDefault()}
+                                onMouseEnter={() => {
+                                  setActiveIndex(i)
+                                  prefetchOption(s.categorySlug, s.productSlug)
+                                }}
+                                onClick={(e) => {
+                                  e.preventDefault()
+                                  navigateTo(s.categorySlug, s.productSlug)
+                                }}
+                              >
+                                <div className="flex items-center space-x-3">
+                                  <img
+                                    src={s.image}
+                                    alt={s.name}
+                                    className="w-8 h-8 object-cover rounded"
+                                    loading="lazy"
+                                  />
+                                  <span className="text-gray-800">{s.name}</span>
+                                </div>
+                              </Link>
+                            )
+                          })
+                        )}
+                      </div>
+                    )}
                   </div>
                 </form>
               </div>
             </div>
+
           </div>
         </div>
       </div>

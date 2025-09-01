@@ -8,22 +8,52 @@ const HeroSection: React.FC = () => {
 
   const slides = [
     {
-      image: "/herbal-extracts-manufacturing-facility.png",
-      title: "Premium Herbal Extracts",
-      subtitle: "Manufacturing Excellence Since 2018",
-      description: "Leading manufacturer and supplier of premium health products and natural supplements",
+      image: "/Factory_Images/004.png",
+      title: "Advanced Manufacturing Facility",
+      subtitle: "State-of-the-Art Production",
+      description: "Our cutting-edge manufacturing facility equipped with the latest technology for premium herbal extracts",
     },
     {
-      image: "/natural-supplements-laboratory.png",
-      title: "Natural Supplements",
-      subtitle: "Quality Assured Products",
-      description: "ISO certified facility ensuring highest quality standards for all our products",
+      image: "/Factory_Images/005.png",
+      title: "Quality Control Laboratory",
+      subtitle: "Rigorous Testing Standards",
+      description: "Advanced laboratory facilities ensuring every product meets international quality standards",
     },
     {
       image: "/ayurvedic-herbs-processing.png",
       title: "Ayurvedic Heritage",
       subtitle: "Traditional Wisdom, Modern Technology",
       description: "Combining ancient Ayurvedic knowledge with modern manufacturing processes",
+    },
+    {
+      image: "/Factory_Images/006.png",
+      title: "Herbal Extraction Process",
+      subtitle: "Precision Extraction Technology",
+      description: "Advanced extraction methods preserving the natural potency of herbs and botanicals",
+    },
+    {
+      image: "/Factory_Images/herbal%20extraction%20pl.png",
+      title: "Modern Production Line",
+      subtitle: "Efficient Manufacturing Process",
+      description: "Streamlined production processes ensuring consistent quality and timely delivery",
+    },
+    {
+      image: "/Factory_Images/HPLCs.jpg.png",
+      title: "HPLC Analysis Equipment",
+      subtitle: "Advanced Analytical Technology",
+      description: "High-performance liquid chromatography for precise quality analysis and standardization",
+    },
+    {
+      image: "/Factory_Images/image001.png",
+      title: "Research and Development Lab",
+      subtitle: "Innovation in Natural Products",
+      description: "Dedicated R&D facilities driving innovation in herbal and natural supplement development",
+    },
+    {
+      image: "/Factory_Images/Pure%20ingredient%20Lab%20.png",
+      title: "Pure Ingredient Processing",
+      subtitle: "Clean and Pure Manufacturing",
+      description: "Specialized processing ensuring the purity and efficacy of our natural ingredients",
     },
   ]
 

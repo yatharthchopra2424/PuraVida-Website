@@ -192,3 +192,72 @@ html {
 .border-green-700 {
   border-color: #5a9212;
 }
+
+/* Custom font family for Geist */
+.font-sans {
+  font-family: var(--font-geist-sans);
+}
+
+/* Dynamic ambient lighting animations for product highlighting */
+@keyframes ambient-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.3), 0 0 40px rgba(249, 115, 22, 0.2), 0 0 60px rgba(249, 115, 22, 0.1);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(249, 115, 22, 0.5), 0 0 60px rgba(249, 115, 22, 0.3), 0 0 90px rgba(249, 115, 22, 0.2);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes ambient-fade {
+  0% {
+    box-shadow: 0 0 30px rgba(249, 115, 22, 0.5), 0 0 60px rgba(249, 115, 22, 0.3), 0 0 90px rgba(249, 115, 22, 0.2);
+    transform: scale(1.02);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(249, 115, 22, 0.1);
+    transform: scale(1);
+  }
+}
+
+@keyframes blink-highlight {
+  0%, 50%, 100% {
+    border-color: rgba(249, 115, 22, 0.8);
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+  }
+  25%, 75% {
+    border-color: rgba(249, 115, 22, 0.2);
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.2);
+  }
+}
+
+.product-highlight {
+  animation: ambient-pulse 2s ease-in-out infinite, blink-highlight 1.5s ease-in-out 3;
+}
+
+.product-highlight-fade {
+  animation: ambient-fade 3s ease-out forwards;
+}
+
+/* Ambient lighting effect for highlighted products */
+.ambient-light {
+  position: relative;
+}
+
+.ambient-light::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.1) 0%, transparent 70%);
+  border-radius: inherit;
+  z-index: -1;
+  animation: ambient-pulse 2s ease-in-out infinite;
+}
+
+.ambient-light-fade::before {
+  animation: ambient-fade 3s ease-out forwards;
+}
